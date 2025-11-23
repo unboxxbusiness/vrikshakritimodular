@@ -49,8 +49,8 @@ export function KitchenCosting() {
                             </Button>
                         </div>
                     </div>
-                    <div className="border-border/50 relative rounded-3xl border p-3 lg:col-span-3">
-                        <div className="bg-linear-to-b aspect-w-4 aspect-h-3 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
+                    <div className="relative rounded-3xl p-3 lg:col-span-3">
+                        <div className="relative aspect-[4/3] rounded-2xl">
                            {costImage && (
                                 <Image 
                                     src={costImage.imageUrl} 
