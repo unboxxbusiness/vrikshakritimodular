@@ -1,26 +1,28 @@
-import { Layers, PanelTop, Wrench, LayoutGrid } from 'lucide-react';
+import { Layers, PanelTop, Wrench, LayoutGrid, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Button } from '../ui/button';
+import Link from 'next/link';
 
 const materials = [
     {
-        title: 'Carcass Materials',
+        title: 'Carcass',
         description: 'Plywood, HDHMR, BWR Board',
-        icon: <Layers className="size-8" />,
+        icon: <Layers className="size-8 text-primary" />,
     },
     {
-        title: 'Shutter Finishes',
-        description: 'Acrylic, PU, Laminate, Veneer',
-        icon: <PanelTop className="size-8" />,
+        title: 'Shutters',
+        description: 'Acrylic, PU, Laminate, Veneer, Membrane',
+        icon: <PanelTop className="size-8 text-primary" />,
     },
     {
         title: 'Hardware',
         description: 'Blum, Hettich, Hafele',
-        icon: <Wrench className="size-8" />,
+        icon: <Wrench className="size-8 text-primary" />,
     },
     {
         title: 'Accessories',
-        description: 'Organizers, corner units, tall units',
-        icon: <LayoutGrid className="size-8" />,
+        description: 'Tandems, corner units, tall units, organizers',
+        icon: <LayoutGrid className="size-8 text-primary" />,
     },
 ];
 
@@ -43,6 +45,13 @@ export function MaterialsFinishes() {
                         />
                     ))}
                 </div>
+                <div className="mt-12 text-center">
+                    <Button asChild variant="ghost">
+                        <Link href="#">
+                            Explore Materials & Finishes <ArrowRight className="size-4 ml-2" />
+                        </Link>
+                    </Button>
+                </div>
             </div>
         </section>
     )
@@ -54,12 +63,13 @@ const MaterialCard = ({ title, description, icon, index }: { title: string; desc
             className={cn(
                 "flex flex-col lg:border-r py-10 relative group/feature dark:border-neutral-800",
                 (index === 0) && "lg:border-l dark:border-neutral-800",
-                "border-b dark:border-neutral-800"
+                "border-b dark:border-neutral-800",
+                index >= 2 && "lg:border-b-0"
             )}
         >
             <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
 
-            <div className="mb-4 relative z-10 px-10 text-primary">
+            <div className="mb-4 relative z-10 px-10">
                 {icon}
             </div>
             <div className="text-lg font-bold mb-2 relative z-10 px-10">
