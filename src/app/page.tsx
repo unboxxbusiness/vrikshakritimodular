@@ -2,6 +2,7 @@ import { Hero } from '@/components/home/hero';
 import { KitchenStyles } from '@/components/home/kitchen-styles';
 import { WhyVrikshakriti } from '@/components/home/why-vrikshakriti';
 import { DesignProcess } from '@/components/home/design-process';
+import { MaterialsFinishes } from '@/components/home/materials-finishes';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <WhyVrikshakriti />
       <KitchenStyles />
       <DesignProcess />
+      <MaterialsFinishes />
     </>
   );
 }
