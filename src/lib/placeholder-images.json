@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "feature-1",
+      "description": "A striking modern villa with geometric lines and a seamless indoor-outdoor flow.",
+      "imageUrl": "https://images.unsplash.com/photo-1531591022136-eb8b0da1e6d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzYzODcxMTk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern architecture"
+    },
+    {
+      "id": "feature-2",
+      "description": "An eco-friendly office building featuring a living wall and sustainable materials.",
+      "imageUrl": "https://images.unsplash.com/photo-1569227997603-33b9f12af927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdXN0YWluYWJsZSUyMGJ1aWxkaW5nfGVufDB8fHx8MTc2Mzg5NzY0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sustainable building"
+    },
+    {
+      "id": "feature-3",
+      "description": "A minimalist interior design with natural light and a neutral color palette for a calming atmosphere.",
+      "imageUrl": "https://images.unsplash.com/photo-1667312939978-64cf31718a6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtaW5pbWFsaXN0JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYzODk3NjQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist interior"
+    },
+    {
+      "id": "feature-4",
+      "description": "A community library designed to be an open and inviting space for learning and collaboration.",
+      "imageUrl": "https://images.unsplash.com/photo-1567105791900-f3998208b3e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwdWJsaWMlMjBsaWJyYXJ5fGVufDB8fHx8MTc2Mzg5NzY0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "public library"
+    },
+    {
+      "id": "feature-5",
+      "description": "A residential tower with dynamic facade articulation and breathtaking city views.",
+      "imageUrl": "https://images.unsplash.com/photo-1746823032195-3f934451d4e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxyZXNpZGVudGlhbCUyMHRvd2VyfGVufDB8fHx8MTc2Mzg5NzY0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "residential tower"
+    },
+    {
+      "id": "feature-6",
+      "description": "A landscape architecture project that integrates natural elements into an urban park.",
+      "imageUrl": "https://images.unsplash.com/photo-1630752918954-d577d011d8df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsYW5kc2NhcGUlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzYzODIzMjAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "landscape architecture"
+    }
+  ]
 }
