@@ -64,7 +64,7 @@ export function PortfolioGallery() {
             <p className="mt-4 text-lg text-black dark:text-white">
               Browse a collection of real modular kitchens and 3D concepts crafted by our design team.
             </p>
-            <div className="mt-8">
+            <div className="mt-12">
               <Button asChild>
                 <Link href="#">
                   View Full Gallery
