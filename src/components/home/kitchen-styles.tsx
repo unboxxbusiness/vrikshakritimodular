@@ -43,7 +43,10 @@ export function KitchenStyles() {
   return (
     <div className="bg-background relative z-10 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-3xl font-semibold text-center md:text-4xl">Modular Kitchen Styles We Specialize In</h2>
+            <div className="text-center max-w-3xl mx-auto">
+              <h2 className="text-3xl font-semibold text-center md:text-4xl">Modular Kitchen Styles We Specialize In</h2>
+              <p className="text-muted-foreground mt-4">Whether you have a compact apartment or a spacious villa, we have a kitchen layout that fits your space and needs.</p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative z-10 pt-10 max-w-7xl mx-auto">
                 {features.map((feature, index) => (
                     <Feature key={feature.title} {...feature} index={index} />
