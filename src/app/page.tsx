@@ -1,5 +1,4 @@
 import { Hero } from '@/components/home/hero';
-import { Partners } from '@/components/home/features';
 import { WhyVrikshakriti } from '@/components/home/why-vrikshakriti';
 
 export default function Home() {
@@ -7,7 +6,6 @@ export default function Home() {
     <>
       <Hero />
       <WhyVrikshakriti />
-      <Partners />
     </>
   );
 }
