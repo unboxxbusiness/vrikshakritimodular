@@ -5,6 +5,7 @@ import { DesignProcess } from '@/components/home/design-process';
 import { MaterialsFinishes } from '@/components/home/materials-finishes';
 import { KitchenCosting } from '@/components/home/kitchen-costing';
 import { PortfolioGallery } from '@/components/home/portfolio-gallery';
+import { Separator } from '@/components/ui/separator';
 
 export default function Home() {
   return (
