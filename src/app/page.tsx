@@ -4,6 +4,7 @@ import { WhyVrikshakriti } from '@/components/home/why-vrikshakriti';
 import { DesignProcess } from '@/components/home/design-process';
 import { MaterialsFinishes } from '@/components/home/materials-finishes';
 import { KitchenCosting } from '@/components/home/kitchen-costing';
+import { PortfolioGallery } from '@/components/home/portfolio-gallery';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <DesignProcess />
       <MaterialsFinishes />
       <KitchenCosting />
+      <PortfolioGallery />
     </>
   );
 }
