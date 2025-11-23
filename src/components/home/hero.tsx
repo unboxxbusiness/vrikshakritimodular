@@ -2,10 +2,10 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { AnimatedGroup } from '@/components/ui/animated-group'
 import Image from 'next/image';
+import { Badge } from '../ui/badge';
 
 const transitionVariants = {
     item: {
@@ -28,6 +28,12 @@ const transitionVariants = {
 }
 
 export function Hero() {
+    const usps = [
+        "10–15 Year Warranty",
+        "Premium Hardware (Blum / Hettich)",
+        "Factory-Finished Perfection",
+        "Fast Installation"
+    ];
     return (
         <div className="overflow-hidden">
             <div
@@ -77,31 +83,21 @@ export function Hero() {
                     <div className="mx-auto max-w-7xl px-6">
                         <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
                             <AnimatedGroup variants={transitionVariants}>
-                                <Link
-                                    href="#link"
-                                    className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-black/5 transition-all duration-300 dark:border-t-white/5 dark:shadow-zinc-950">
-                                    <span className="text-foreground text-sm">Introducing Support for AI Models</span>
-                                    <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
-
-                                    <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
-                                        <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
-                                            <span className="flex size-6">
-                                                <ArrowRight className="m-auto size-3" />
-                                            </span>
-                                            <span className="flex size-6">
-                                                <ArrowRight className="m-auto size-3" />
-                                            </span>
-                                        </div>
-                                    </div>
-                                </Link>
+                                <div className="flex flex-wrap justify-center gap-2 mb-8">
+                                    {usps.map((usp) => (
+                                        <Badge key={usp} variant="secondary" className="text-sm">
+                                            {usp}
+                                        </Badge>
+                                    ))}
+                                </div>
                     
                                 <h1
                                     className="mt-8 max-w-4xl mx-auto text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]">
-                                    Modern Solutions for Customer Engagement
+                                    Transform Your Home with a Smart, Stylish Modular Kitchen
                                 </h1>
                                 <p
                                     className="mx-auto mt-8 max-w-2xl text-balance text-lg">
-                                    Highly customizable components for building modern websites and applications that look and feel the way you mean it.
+                                    Crafted for Indian homes. Designed for everyday convenience. Built to last.
                                 </p>
                             </AnimatedGroup>
 
@@ -126,7 +122,7 @@ export function Hero() {
                                         size="lg"
                                         className="rounded-xl px-5 text-base">
                                         <Link href="#link">
-                                            <span className="text-nowrap">Start Building</span>
+                                            <span className="text-nowrap">Book a Free Design Consultation</span>
                                         </Link>
                                     </Button>
                                 </div>
@@ -137,7 +133,7 @@ export function Hero() {
                                     variant="ghost"
                                     className="h-10.5 rounded-xl px-5">
                                     <Link href="#link">
-                                        <span className="text-nowrap">Request a demo</span>
+                                        <span className="text-nowrap">Download Kitchen Brochure</span>
                                     </Link>
                                 </Button>
                             </AnimatedGroup>
