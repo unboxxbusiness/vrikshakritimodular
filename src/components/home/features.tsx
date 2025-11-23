@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import { ChevronRight } from 'lucide-react';
 
 export function Partners() {
   const partners = [
@@ -6,28 +8,34 @@ export function Partners() {
     { name: 'Column', logo: 'https://html.tailus.io/blocks/customers/column.svg', height: 16 },
     { name: 'GitHub', logo: 'https://html.tailus.io/blocks/customers/github.svg', height: 16 },
     { name: 'Nike', logo: 'https://html.tailus.io/blocks/customers/nike.svg', height: 20 },
+    { name: 'Lemon Squeezy', logo: 'https://html.tailus.io/blocks/customers/lemonsqueezy.svg', height: 20 },
     { name: 'Laravel', logo: 'https://html.tailus.io/blocks/customers/laravel.svg', height: 16 },
     { name: 'Lilly', logo: 'https://html.tailus.io/blocks/customers/lilly.svg', height: 28 },
-    { name: 'Lemon Squeezy', logo: 'https://html.tailus.io/blocks/customers/lemonsqueezy.svg', height: 20 },
     { name: 'OpenAI', logo: 'https://html.tailus.io/blocks/customers/openai.svg', height: 24 },
-    { name: 'Tailwind CSS', logo: 'https://html.tailus.io/blocks/customers/tailwindcss.svg', height: 16 },
-    { name: 'Vercel', logo: 'https://html.tailus.io/blocks/customers/vercel.svg', height: 20 },
-    { name: 'Zapier', logo: 'https://html.tailus.io/blocks/customers/zapier.svg', height: 20 },
   ];
   return (
-    <section className="bg-background relative z-10 py-16">
-        <div className="m-auto max-w-5xl px-6">
-            <h2 className="text-center text-lg font-medium">Your favorite companies are our partners.</h2>
-            <div className="mx-auto mt-20 flex max-w-4xl flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-16 sm:gap-y-12">
+    <section className="bg-background pb-16 pt-16 md:pb-32">
+        <div className="group relative m-auto max-w-5xl px-6">
+            <div className="absolute inset-0 z-10 flex scale-95 items-center justify-center opacity-0 duration-500 group-hover:scale-100 group-hover:opacity-100">
+                <Link
+                    href="/"
+                    className="block text-sm duration-150 hover:opacity-75">
+                    <span> Meet Our Customers</span>
+
+                    <ChevronRight className="ml-1 inline-block size-3" />
+                </Link>
+            </div>
+            <div className="group-hover:blur-xs mx-auto mt-12 grid max-w-2xl grid-cols-4 gap-x-12 gap-y-8 transition-all duration-500 group-hover:opacity-50 sm:gap-x-16 sm:gap-y-14">
                 {partners.map(partner => (
-                    <Image
-                        key={partner.name}
-                        className="h-5 w-fit dark:invert"
-                        src={partner.logo}
-                        alt={`${partner.name} Logo`}
-                        height={partner.height}
-                        width={100}
-                    />
+                    <div className="flex" key={partner.name}>
+                        <Image
+                            className="mx-auto h-5 w-fit dark:invert"
+                            src={partner.logo}
+                            alt={`${partner.name} Logo`}
+                            height={partner.height}
+                            width={100}
+                        />
+                    </div>
                 ))}
             </div>
         </div>
