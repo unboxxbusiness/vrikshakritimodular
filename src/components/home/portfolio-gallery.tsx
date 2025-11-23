@@ -3,6 +3,9 @@
 import * as React from "react"
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from "next/image";
+import { Button } from "../ui/button";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export function PortfolioGallery() {
     const portfolioImages = PlaceHolderImages.filter(img => img.id.startsWith('portfolio-'));
@@ -30,6 +33,13 @@ export function PortfolioGallery() {
                         />
                     </div>
                 ))}
+            </div>
+            <div className="mt-12 text-center">
+                <Button asChild variant="ghost">
+                    <Link href="#">
+                        View Full Gallery <ArrowRight className="size-4 ml-2" />
+                    </Link>
+                </Button>
             </div>
         </section>
     );
