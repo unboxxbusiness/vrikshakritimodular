@@ -1,54 +1,36 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 
-export function Features() {
-  const features = PlaceHolderImages.slice(0, 6);
-
+export function Partners() {
+  const partners = [
+    { name: 'Nvidia', logo: 'https://html.tailus.io/blocks/customers/nvidia.svg', height: 20 },
+    { name: 'Column', logo: 'https://html.tailus.io/blocks/customers/column.svg', height: 16 },
+    { name: 'GitHub', logo: 'https://html.tailus.io/blocks/customers/github.svg', height: 16 },
+    { name: 'Nike', logo: 'https://html.tailus.io/blocks/customers/nike.svg', height: 20 },
+    { name: 'Laravel', logo: 'https://html.tailus.io/blocks/customers/laravel.svg', height: 16 },
+    { name: 'Lilly', logo: 'https://html.tailus.io/blocks/customers/lilly.svg', height: 28 },
+    { name: 'Lemon Squeezy', logo: 'https://html.tailus.io/blocks/customers/lemonsqueezy.svg', height: 20 },
+    { name: 'OpenAI', logo: 'https://html.tailus.io/blocks/customers/openai.svg', height: 24 },
+    { name: 'Tailwind CSS', logo: 'https://html.tailus.io/blocks/customers/tailwindcss.svg', height: 16 },
+    { name: 'Vercel', logo: 'https://html.tailus.io/blocks/customers/vercel.svg', height: 20 },
+    { name: 'Zapier', logo: 'https://html.tailus.io/blocks/customers/zapier.svg', height: 20 },
+  ];
   return (
-    <section id="features" className="w-full py-20 md:py-28 lg:py-32 bg-background">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="space-y-4 text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
-            Featured Projects
-          </h2>
-          <p className="mx-auto max-w-[700px] text-foreground/60 md:text-xl">
-            Discover a selection of our finest work, showcasing innovation, craftsmanship, and a commitment to excellence.
-          </p>
+    <section className="bg-background relative z-10 py-16">
+        <div className="m-auto max-w-5xl px-6">
+            <h2 className="text-center text-lg font-medium">Your favorite companies are our partners.</h2>
+            <div className="mx-auto mt-20 flex max-w-4xl flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-16 sm:gap-y-12">
+                {partners.map(partner => (
+                    <Image
+                        key={partner.name}
+                        className="h-5 w-fit dark:invert"
+                        src={partner.logo}
+                        alt={`${partner.name} Logo`}
+                        height={partner.height}
+                        width={100}
+                    />
+                ))}
+            </div>
         </div>
-        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature) => (
-            <Card key={feature.id} className="group flex flex-col overflow-hidden rounded-lg shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
-              <div className="overflow-hidden">
-                <Image
-                  src={feature.imageUrl}
-                  alt={feature.description}
-                  width={600}
-                  height={400}
-                  className="object-cover w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105"
-                  data-ai-hint={feature.imageHint}
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow bg-card">
-                <h3 className="text-xl font-bold font-headline mb-2">Project {feature.id.split('-')[1]}</h3>
-                <p className="text-foreground/70 flex-grow mb-4">
-                  {feature.description}
-                </p>
-                <div className="mt-auto">
-                    <Button variant="link" asChild className="p-0 text-primary font-semibold">
-                    <Link href="#">
-                        View Project <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                    </Button>
-                </div>
-              </div>
-            </Card>
-          ))}
-        </div>
-      </div>
     </section>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import { Mountain } from 'lucide-react';
 import Link from 'next/link';
+import { Logo } from './logo';
 
 export function Footer() {
   return (
@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col items-center md:items-start">
                  <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-                    <Mountain className="h-6 w-6 text-primary" />
+                    <Logo />
                     <span>Vrikshakriti</span>
                 </Link>
                 <p className="text-foreground/60 mt-2 text-sm text-center md:text-left">
