@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { AnimatedGroup } from '@/components/ui/animated-group'
 import Image from 'next/image';
 import { Badge } from '../ui/badge';
+import { Check } from 'lucide-react';
 
 const transitionVariants = {
     item: {
@@ -83,14 +84,6 @@ export function Hero() {
                     <div className="mx-auto max-w-7xl px-6">
                         <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
                             <AnimatedGroup variants={transitionVariants}>
-                                <div className="flex flex-wrap justify-center gap-2 mb-8">
-                                    {usps.map((usp) => (
-                                        <Badge key={usp} variant="secondary" className="text-sm">
-                                            {usp}
-                                        </Badge>
-                                    ))}
-                                </div>
-                    
                                 <h1
                                     className="mt-8 max-w-4xl mx-auto text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]">
                                     Transform Your Home with a Smart, Stylish Modular Kitchen
@@ -136,6 +129,28 @@ export function Hero() {
                                         <span className="text-nowrap">Download Kitchen Brochure</span>
                                     </Link>
                                 </Button>
+                            </AnimatedGroup>
+                            
+                            <AnimatedGroup
+                                variants={{
+                                    container: {
+                                        visible: {
+                                            transition: {
+                                                staggerChildren: 0.05,
+                                                delayChildren: 1.25,
+                                            },
+                                        },
+                                    },
+                                    ...transitionVariants,
+                                }}>
+                                <div className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-2">
+                                    {usps.map((usp) => (
+                                        <span key={usp} className="inline-flex items-center gap-2 text-sm text-muted-foreground">
+                                            <Check className="size-4 text-primary" />
+                                            {usp}
+                                        </span>
+                                    ))}
+                                </div>
                             </AnimatedGroup>
                         </div>
                     </div>
