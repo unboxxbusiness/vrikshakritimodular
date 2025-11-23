@@ -3,6 +3,7 @@ import { KitchenStyles } from '@/components/home/kitchen-styles';
 import { WhyVrikshakriti } from '@/components/home/why-vrikshakriti';
 import { DesignProcess } from '@/components/home/design-process';
 import { MaterialsFinishes } from '@/components/home/materials-finishes';
+import { KitchenCosting } from '@/components/home/kitchen-costing';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <KitchenStyles />
       <DesignProcess />
       <MaterialsFinishes />
+      <KitchenCosting />
     </>
   );
 }

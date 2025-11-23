@@ -39,8 +39,14 @@
     {
       "id": "materials-1",
       "description": "A close-up of various kitchen material samples, including wood grains, laminates, and stone textures.",
-      "imageUrl": "https://picsum.photos/seed/kitchenmaterials/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1760067538241-33a8694d9e23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxraXRjaGVuJTIwbWF0ZXJpYWxzfGVufDB8fHx8MTc2MzkwOTgzNXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "kitchen materials"
+    },
+    {
+      "id": "kitchen-costing-1",
+      "description": "A modern kitchen with a calculator and design plans on the counter, illustrating the concept of kitchen cost calculation.",
+      "imageUrl": "https://images.unsplash.com/photo-1651107786750-fbefe0bdd0a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8a2l0Y2hlbiUyMGNvc3R8ZW58MHx8fHwxNzYzOTA5ODM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kitchen cost"
     }
   ]
 }
