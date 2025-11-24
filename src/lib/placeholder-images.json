@@ -143,6 +143,24 @@
       "description": "A U-shaped kitchen with a large central island that includes a sink and seating area.",
       "imageUrl": "https://images.unsplash.com/photo-1604578762244-49b7b4845070?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwaXNsYW5kJTIwc2VhdGluZ3xlbnwwfHx8fDE3NjQxOTc3MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "kitchen island seating"
+    },
+    {
+      "id": "straight-kitchen-hero-1",
+      "description": "A sleek, modern straight kitchen with minimalist white cabinets along a single wall.",
+      "imageUrl": "https://images.unsplash.com/photo-1602028923094-139363a8a3a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHJhaWdodCUyMGtpdGNoZW58ZW58MHx8fHwxNzY0MjEwMDAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "straight kitchen"
+    },
+    {
+      "id": "straight-best-for-1",
+      "description": "A compact and stylish studio apartment living area with an open kitchen.",
+      "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkaW8lMjBhcGFydG1lbnR8ZW58MHx8fHwxNzY0MjEwMDAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "studio apartment"
+    },
+    {
+      "id": "straight-options-1",
+      "description": "A straight kitchen featuring handleless cabinets and integrated appliances for a seamless look.",
+      "imageUrl": "https://images.unsplash.com/photo-1596205267383-176de15c15e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYW5kbGVsZXNzJTIwa2l0Y2hlbnxlbnwwfHx8fDE3NjQyMTAwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "handleless kitchen"
     }
   ]
 }

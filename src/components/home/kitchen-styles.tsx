@@ -24,6 +24,7 @@ export function KitchenStyles() {
           description:
             "Clean, minimal layout ideal for compact spaces.",
           icon: <Rows className="size-8" />,
+          href: "/straight-kitchen",
         },
         {
           title: "Parallel / Galley Kitchen",
