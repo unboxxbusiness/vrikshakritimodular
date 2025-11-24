@@ -5,8 +5,34 @@ import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/header';
 
 export const metadata: Metadata = {
-  title: 'Vrikshakriti - Modern Architectural Solutions',
-  description: 'Crafting the future of spaces with innovative and sustainable design.',
+  title: {
+    default: 'Vrikshakriti - Modern Modular Kitchens & Interiors',
+    template: '%s | Vrikshakriti',
+  },
+  description: 'Design and build your dream modular kitchen with Vrikshakriti. We specialize in creating smart, stylish, and durable kitchens crafted for modern Indian homes.',
+  keywords: ['modular kitchen', 'interior design', 'kitchen renovation', 'Delhi NCR', 'Vrikshakriti'],
+  openGraph: {
+    title: 'Vrikshakriti - Modern Modular Kitchens & Interiors',
+    description: 'Crafting beautiful and functional modular kitchens for modern Indian homes.',
+    url: 'https://www.vrikshakriti.shop',
+    siteName: 'Vrikshakriti',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/dhrigocvd/image/upload/v1763958686/Gemini_Generated_Image_wkk0fiwkk0fiwkk0_zgz3un.png',
+        width: 1200,
+        height: 630,
+        alt: 'A modern and stylish modular kitchen by Vrikshakriti',
+      },
+    ],
+    locale: 'en_IN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Vrikshakriti - Modern Modular Kitchens & Interiors',
+    description: 'Design your dream modular kitchen with our expert team. Quality craftsmanship and transparent pricing.',
+    images: ['https://res.cloudinary.com/dhrigocvd/image/upload/v1763958686/Gemini_Generated_Image_wkk0fiwkk0fiwkk0_zgz3un.png'],
+  },
 };
 
 export default function RootLayout({

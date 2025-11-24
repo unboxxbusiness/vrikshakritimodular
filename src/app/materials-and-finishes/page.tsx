@@ -6,6 +6,12 @@ import { HardwareAccessories } from '@/components/materials-and-finishes/hardwar
 import { FinishOptions } from '@/components/materials-and-finishes/finish-options';
 import { WhyMaterialsMatter } from '@/components/materials-and-finishes/why-materials-matter';
 import { Cta } from '@/components/materials-and-finishes/cta';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Materials and Finishes for Modular Kitchens',
+    description: 'Discover the high-quality materials and premium finishes we use at Vrikshakriti. Explore options for carcasses, shutters, countertops, and hardware.',
+};
 
 export default function MaterialsAndFinishesPage() {
   return (
