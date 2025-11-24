@@ -14,10 +14,12 @@ import {
 import { motion } from "framer-motion"
 import { useToast } from "@/hooks/use-toast"
 import Link from "next/link"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export function Dock({ className }: { className?: string }) {
   const [hovered, setHovered] = React.useState<number | null>(null)
   const { toast } = useToast()
+  const isMobile = useIsMobile();
 
   const handleShare = async () => {
     const shareData = {
@@ -29,7 +31,6 @@ export function Dock({ className }: { className?: string }) {
       try {
         await navigator.share(shareData)
       } catch (error: any) {
-        // Silently fail if the user cancels the share action (AbortError)
         if (error.name !== 'AbortError') {
           console.error("Error sharing:", error)
         }
@@ -74,6 +75,10 @@ export function Dock({ className }: { className?: string }) {
       onClick: handleShare,
     },
   ]
+
+  if (!isMobile) {
+    return null;
+  }
 
   return (
     <div
