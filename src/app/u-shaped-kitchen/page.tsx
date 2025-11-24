@@ -12,7 +12,9 @@ export default function UShapedKitchenPage() {
       <WhyChoose />
       <BestSuitedFor />
       <DesignOptions />
-      <Gallery />
+      <div id="gallery">
+        <Gallery />
+      </div>
       <Cta />
     </>
   );
