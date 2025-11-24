@@ -15,24 +15,27 @@ import { Logo } from "./logo"
 import Link from "next/link"
 
 export function Footer() {
-  const [isDarkMode, setIsDarkMode] = React.useState(true)
+  const [isDarkMode, setIsDarkMode] = React.useState(false);
 
   React.useEffect(() => {
-    if (typeof window !== "undefined") {
-      if (isDarkMode) {
-        document.documentElement.classList.add("dark")
-      } else {
-        document.documentElement.classList.remove("dark")
-      }
-    }
-  }, [isDarkMode])
-
-  React.useEffect(() => {
-    if (typeof window !== "undefined") {
-        const isDark = document.documentElement.classList.contains('dark');
-        setIsDarkMode(isDark);
+    const theme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (theme === "dark" || (!theme && prefersDark)) {
+      setIsDarkMode(true);
+    } else {
+      setIsDarkMode(false);
     }
   }, []);
+
+  React.useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [isDarkMode]);
 
 
   return (
