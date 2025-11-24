@@ -82,12 +82,12 @@ export const Header = () => {
                         </div>
 
                         <div className="absolute inset-0 m-auto hidden size-fit lg:block">
-                            <ul className="flex gap-8 text-sm">
+                            <ul className="flex gap-8 text-sm font-medium">
                                 {menuItems.map((item, index) => (
                                     <li key={index}>
                                         <Link
                                             href={item.href}
-                                            className="text-muted-foreground hover:text-accent-foreground block duration-150">
+                                            className="text-foreground/80 hover:text-foreground block duration-150">
                                             <span>{item.name}</span>
                                         </Link>
                                     </li>
