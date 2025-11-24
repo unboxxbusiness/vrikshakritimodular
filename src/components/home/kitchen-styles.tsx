@@ -1,6 +1,6 @@
 
 import { cn } from "@/lib/utils";
-import { RefreshCw, Rows, Columns, ParkingSquare, BoxSelect } from "lucide-react";
+import { RefreshCw, Rows, Columns, ParkingSquare, BoxSelect, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export function KitchenStyles() {
@@ -99,6 +99,11 @@ const Feature = ({
       <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
         {description}
       </p>
+      {href && (
+        <div className="absolute bottom-4 right-4 opacity-0 group-hover/feature:opacity-100 transition-opacity duration-200">
+            <ArrowRight className="size-6 text-primary" />
+        </div>
+      )}
     </div>
   );
 
