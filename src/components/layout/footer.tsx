@@ -166,9 +166,9 @@ export function Footer() {
             <Link href="/terms-of-service" className="transition-colors hover:text-primary">
               Terms of Service
             </Link>
-            <a href="#" className="transition-colors hover:text-primary">
-              Cookie Settings
-            </a>
+            <Link href="/cookie-policy" className="transition-colors hover:text-primary">
+              Cookie Policy
+            </Link>
           </nav>
         </div>
       </div>
