@@ -36,7 +36,7 @@ export function Hero() {
         "Fast Installation"
     ];
     return (
-        <div className="overflow-hidden pt-16">
+        <div className="overflow-hidden pt-8">
              <BGPattern variant="grid" size={32} mask="fade-y" className="opacity-10 dark:opacity-5" />
             <section>
                 <div className="relative pt-24 md:pt-36">
