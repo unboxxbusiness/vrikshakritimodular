@@ -177,7 +177,7 @@
     {
       "id": "straight-kitchen-hero-1",
       "description": "A sleek, modern straight kitchen with minimalist white cabinets along a single wall.",
-      "imageUrl": "https://images.unsplash.com/photo-1602028923094-139363a8a3a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHJhaWdodCUyMGtpdGNoZW58ZW58MHx8fHwxNzY0MjEwMDAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/dhrigocvd/image/upload/v1763966182/Gemini_Generated_Image_q5rwz5q5rwz5q5rw_zsltkm.png",
       "imageHint": "straight kitchen"
     },
     {
@@ -201,7 +201,7 @@
     {
       "id": "parallel-best-for-1",
       "description": "A professional chef working efficiently in a well-organized commercial kitchen.",
-      "imageUrl": "https://images.unsplash.com/photo-1556911220-bff31c812dba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGVmJTIwa2l0Y2hlbnxlbnwwfHx8fDE3NjQyMzkzMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556911220-bff31c812dba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGVmJTIwa2l0Y2hlbnxlbnwwfHx8fDE3NjQyMzkzMTF8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "chef kitchen"
     },
     {
@@ -249,7 +249,7 @@
     {
       "id": "materials-hero-1",
       "description": "A flat lay of various material samples including wood, marble, and fabric.",
-      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1080&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1530099486328-e021101a494a?q=80&w=2747&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "material samples"
     },
     {
