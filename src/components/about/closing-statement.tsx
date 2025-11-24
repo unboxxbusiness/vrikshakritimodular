@@ -1,9 +1,7 @@
 "use client";
 
 import { TimelineContent } from "@/components/ui/timeline-animation";
-import { ArrowRight } from "lucide-react";
 import React, { useRef } from "react";
-import Link from 'next/link';
 
 export function ClosingStatement() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -41,7 +39,7 @@ export function ClosingStatement() {
   return (
     <section className="py-16 md:py-32 px-4 bg-background">
       <div className="max-w-4xl mx-auto" ref={sectionRef}>
-        <div className="flex flex-col items-center gap-8 text-center">
+        <div className="relative isolate overflow-hidden bg-primary/5 dark:bg-primary/10 px-6 py-24 text-center shadow-2xl rounded-3xl sm:px-16">
             <TimelineContent
               as="h2"
               animationNum={0}
@@ -66,21 +64,9 @@ export function ClosingStatement() {
               animationNum={1}
               timelineRef={sectionRef}
               customVariants={revealVariants}
-              className="max-w-2xl text-lg text-muted-foreground"
+              className="max-w-2xl mx-auto mt-6 text-lg text-muted-foreground"
             >
               At Vrikshakriti, we don’t just build kitchens—we create spaces where families cook, connect, and create memories. With every project, our goal is simple: to deliver a kitchen that feels truly yours.
-            </TimelineContent>
-            
-            <TimelineContent
-              as="div"
-              animationNum={2}
-              timelineRef={sectionRef}
-              customVariants={revealVariants}
-              className="mt-6"
-            >
-                <Link href="#" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8">
-                    Start Your Kitchen Journey <ArrowRight className="size-4 ml-2" />
-                </Link>
             </TimelineContent>
         </div>
       </div>
