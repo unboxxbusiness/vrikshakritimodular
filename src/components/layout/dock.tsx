@@ -1,3 +1,4 @@
+
 "use client"
 
 import * as React from "react"
@@ -27,8 +28,11 @@ export function Dock({ className }: { className?: string }) {
     if (navigator.share && navigator.canShare(shareData)) {
       try {
         await navigator.share(shareData)
-      } catch (error) {
-        console.error("Error sharing:", error)
+      } catch (error: any) {
+        // Silently fail if the user cancels the share action (AbortError)
+        if (error.name !== 'AbortError') {
+          console.error("Error sharing:", error)
+        }
       }
     } else {
       try {
