@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 export function Logo() {
   return (
@@ -7,6 +8,7 @@ export function Logo() {
       alt="Vrikshakriti Logo"
       width={120}
       height={40}
+      className="h-10 w-auto"
     />
   );
 }
