@@ -163,9 +163,9 @@ export function Footer() {
             <a href="#" className="transition-colors hover:text-primary">
               Privacy Policy
             </a>
-            <a href="#" className="transition-colors hover:text-primary">
+            <Link href="/terms-of-service" className="transition-colors hover:text-primary">
               Terms of Service
-            </a>
+            </Link>
             <a href="#" className="transition-colors hover:text-primary">
               Cookie Settings
             </a>
