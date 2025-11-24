@@ -1,8 +1,6 @@
 "use client"
 import * as React from "react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
 import {
   Tooltip,
@@ -10,7 +8,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-import { ArrowRight, Facebook, Instagram, Linkedin, Moon, Send, Sun, Twitter } from "lucide-react"
+import { ArrowRight, Facebook, Instagram, Linkedin, Moon, Send, Sun, Twitter, MessageCircle } from "lucide-react"
 import { Logo } from "./logo"
 import Link from "next/link"
 
@@ -45,7 +43,7 @@ export function Footer() {
           <div className="relative">
              <Link href="/" className="flex items-center gap-2 font-bold text-lg mb-4">
                 <Logo />
-                <span>Vrikshakriti</span>
+                <span className="sr-only">Vrikshakriti</span>
             </Link>
             <h3 className="text-xl font-semibold">Ready to build your dream kitchen?</h3>
             <p className="mb-6 mt-2 text-muted-foreground">
@@ -78,12 +76,14 @@ export function Footer() {
             </nav>
           </div>
           <div>
-            <h3 className="mb-4 text-lg font-semibold">Contact Us</h3>
-            <address className="space-y-2 text-sm not-italic">
-              <p>123 Design Lane, Arch City, USA</p>
-              <p>Phone: (123) 456-7890</p>
-              <p>Email: contact@vrikshakriti.com</p>
-            </address>
+            <h3 className="mb-4 text-lg font-semibold">Book on WhatsApp</h3>
+            <p className="text-sm text-muted-foreground mb-4">Click below to start a conversation and book your design slot.</p>
+             <Button asChild>
+                <a href="https://wa.me/918851481785" target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="size-4 mr-2" />
+                    Book on WhatsApp
+                </a>
+            </Button>
           </div>
           <div className="relative">
             <h3 className="mb-4 text-lg font-semibold">Follow Us</h3>
@@ -149,9 +149,9 @@ export function Footer() {
                 onCheckedChange={setIsDarkMode}
               />
               <Moon className="h-4 w-4" />
-              <Label htmlFor="dark-mode" className="sr-only">
+              <label htmlFor="dark-mode" className="sr-only">
                 Toggle dark mode
-              </Label>
+              </label>
             </div>
           </div>
         </div>
