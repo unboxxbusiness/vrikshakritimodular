@@ -14,8 +14,8 @@ export default function BookConsultationPage() {
     return (
         <>
             <Hero />
-            <WhatYouGet />
             <ConsultationForm />
+            <WhatYouGet />
             <WhyWhatsapp />
             <Cta />
         </>
