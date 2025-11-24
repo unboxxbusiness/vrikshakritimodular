@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     description: 'Design your dream modular kitchen with our expert team. Quality craftsmanship and transparent pricing.',
     images: ['https://res.cloudinary.com/dhrigocvd/image/upload/v1763958686/Gemini_Generated_Image_wkk0fiwkk0fiwkk0_zgz3un.png'],
   },
+  icons: {
+    icon: 'https://res.cloudinary.com/dhrigocvd/image/upload/v1763972114/Gemini_Generated_Image_rw369trw369trw36-removebg-preview_1_utsfjk.png',
+  },
 };
 
 export default function RootLayout({
