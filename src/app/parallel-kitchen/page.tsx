@@ -3,6 +3,7 @@ import { WhyChoose } from '@/components/parallel-kitchen/why-choose';
 import { BestSuitedFor } from '@/components/parallel-kitchen/best-suited-for';
 import { DesignOptions } from '@/components/parallel-kitchen/design-options';
 import { Cta } from '@/components/home/cta';
+import { Gallery } from '@/components/parallel-kitchen/gallery';
 
 export default function ParallelKitchenPage() {
   return (
@@ -11,6 +12,9 @@ export default function ParallelKitchenPage() {
       <WhyChoose />
       <BestSuitedFor />
       <DesignOptions />
+      <div id="gallery">
+        <Gallery />
+      </div>
       <Cta />
     </>
   );
