@@ -1,8 +1,10 @@
 "use client";
 
+import React from 'react';
 import Image from 'next/image';
-import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
-import { DialogDescription } from '../ui/dialog';
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
+import { cn } from '@/lib/utils';
+import { useInView } from 'framer-motion';
 
 const portfolioImages = [
     {
@@ -152,42 +154,85 @@ const portfolioImages = [
     }
 ];
 
+// Helper to distribute images into columns
+const getColumns = (images: typeof portfolioImages, numColumns: number) => {
+    const columns: (typeof portfolioImages)[] = Array.from({ length: numColumns }, () => []);
+    images.forEach((image, index) => {
+        columns[index % numColumns].push(image);
+    });
+    return columns;
+};
+
+
 export function GalleryGrid() {
-  return (
-    <section className="py-16 md:py-24 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-          {portfolioImages.map((image) => (
-            <Dialog key={image.id}>
-              <DialogTrigger asChild>
-                <div className="relative overflow-hidden rounded-lg cursor-pointer group">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={500}
-                    height={500}
-                    className="w-full h-auto object-cover transform transition-transform duration-300 group-hover:scale-105"
-                  />
-                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+    // Distribute images into 3 columns
+    const columns = getColumns(portfolioImages, 3);
+
+    return (
+        <section className="py-16 md:py-24 bg-background">
+            <div className="container mx-auto px-4 sm:px-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    {columns.map((column, colIndex) => (
+                        <div key={colIndex} className="grid gap-4">
+                            {column.map((image) => (
+                                <AnimatedImage
+                                    key={image.id}
+                                    src={image.src}
+                                    alt={image.alt}
+                                />
+                            ))}
+                        </div>
+                    ))}
                 </div>
-              </DialogTrigger>
-              <DialogContent className="max-w-4xl p-0">
-                <DialogTitle className="sr-only">{image.alt}</DialogTitle>
+            </div>
+        </section>
+    );
+}
+
+
+function AnimatedImage({ alt, src }: { alt: string; src: string; }) {
+    const ref = React.useRef(null);
+    const isInView = useInView(ref, { once: true, amount: 0.2 });
+    const [isLoading, setIsLoading] = React.useState(true);
+
+    return (
+        <Dialog>
+            <DialogTrigger asChild>
+                <div
+                    ref={ref}
+                    className="relative overflow-hidden rounded-lg cursor-pointer group"
+                >
+                    <Image
+                        src={src}
+                        alt={alt}
+                        width={500}
+                        height={500}
+                        className={cn(
+                            'w-full h-auto object-cover transform transition-all duration-1000 ease-in-out group-hover:scale-105',
+                            isInView && !isLoading ? 'opacity-100' : 'opacity-0'
+                        )}
+                        onLoad={() => setIsLoading(false)}
+                        loading="lazy"
+                    />
+                    <div className={cn(
+                        "absolute inset-0 bg-background transition-opacity duration-1000 ease-in-out",
+                        (isInView && !isLoading) ? "opacity-0" : "opacity-100"
+                    )} />
+                </div>
+            </DialogTrigger>
+            <DialogContent className="max-w-4xl p-0">
+                <DialogTitle className="sr-only">{alt}</DialogTitle>
                 <DialogDescription className="sr-only">
-                    Enlarged view of {image.alt}
+                    Enlarged view of {alt}
                 </DialogDescription>
                 <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={1200}
-                  height={800}
-                  className="w-full h-auto object-contain rounded-lg"
+                    src={src}
+                    alt={alt}
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto object-contain rounded-lg"
                 />
-              </DialogContent>
-            </Dialog>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+            </DialogContent>
+        </Dialog>
+    );
 }
