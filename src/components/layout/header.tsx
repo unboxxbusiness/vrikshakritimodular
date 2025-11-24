@@ -6,7 +6,7 @@ import { Menu } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { Logo } from './logo'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 
 const menuItems = [
     { name: 'Features', href: '#link' },
@@ -47,6 +47,7 @@ export const Header = () => {
                                         </Button>
                                     </SheetTrigger>
                                     <SheetContent side="right">
+                                        <SheetTitle className="sr-only">Menu</SheetTitle>
                                         <nav className="grid gap-6 text-lg font-medium mt-10">
                                             <Link href="/" className="flex items-center gap-2 font-bold text-lg mb-4">
                                                 <Logo />
