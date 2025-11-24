@@ -3,6 +3,7 @@ import { OurApproach } from '@/components/about/our-approach';
 import { OurPromise } from '@/components/about/our-promise';
 import { OurValues } from '@/components/about/our-values';
 import { WhatWeDo } from '@/components/about/what-we-do';
+import { ClosingStatement } from '@/components/about/closing-statement';
 
 export default function AboutPage() {
   return (
@@ -12,6 +13,7 @@ export default function AboutPage() {
       <WhatWeDo />
       <OurApproach />
       <OurPromise />
+      <ClosingStatement />
     </>
   );
 }
