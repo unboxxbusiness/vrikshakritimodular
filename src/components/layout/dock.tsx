@@ -58,11 +58,9 @@ export function Dock({ className }: { className?: string }) {
     },
     {
       icon: MessageCircle,
-      label: "Book on WhatsApp",
-      as: "a",
-      href: "https://wa.me/918851481785",
-      target: "_blank",
-      rel: "noopener noreferrer",
+      label: "Book a Consultation",
+      as: Link,
+      href: "/book-a-free-consultation",
       onClick: () => {},
     },
     {
