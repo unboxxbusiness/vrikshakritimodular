@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import Image from 'next/image';
 import { DraftingCompass, Gem, PackageCheck, GanttChartSquare, Users, ShieldCheck } from 'lucide-react';
 
 const features = [
