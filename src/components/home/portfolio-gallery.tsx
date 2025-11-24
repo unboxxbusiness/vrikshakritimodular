@@ -8,7 +8,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export function PortfolioGallery() {
-    const portfolioImages = PlaceHolderImages.filter(img => img.id.startsWith('portfolio-'));
+    const portfolioImages = PlaceHolderImages.filter(img => img.id.startsWith('portfolio-')).slice(0, 6);
 
     return (
         <section className="w-full flex flex-col items-center justify-start py-16 md:py-24 bg-background">
@@ -36,7 +36,7 @@ export function PortfolioGallery() {
             </div>
             <div className="mt-12 text-center">
                 <Button asChild variant="ghost">
-                    <Link href="#">
+                    <Link href="/gallery">
                         View Full Gallery <ArrowRight className="size-4 ml-2" />
                     </Link>
                 </Button>
