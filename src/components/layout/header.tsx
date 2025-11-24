@@ -46,7 +46,7 @@ export const Header = () => {
                                             <span className="sr-only">Open menu</span>
                                         </Button>
                                     </SheetTrigger>
-                                    <SheetContent side="left">
+                                    <SheetContent side="right">
                                         <nav className="grid gap-6 text-lg font-medium mt-10">
                                             <Link href="/" className="flex items-center gap-2 font-bold text-lg mb-4">
                                                 <Logo />
