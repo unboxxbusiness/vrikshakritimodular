@@ -100,14 +100,18 @@ export const Header = () => {
 
     React.useEffect(() => {
         setHasMounted(true);
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
-        };
-        handleScroll();
-        window.addEventListener('scroll', handleScroll, { passive: true });
-        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    React.useEffect(() => {
+        if (hasMounted) {
+            const handleScroll = () => {
+                setIsScrolled(window.scrollY > 50);
+            };
+            handleScroll(); // Check on mount
+            window.addEventListener('scroll', handleScroll, { passive: true });
+            return () => window.removeEventListener('scroll', handleScroll);
+        }
+    }, [hasMounted]);
 
     const handleLinkClick = () => {
         setIsMobileMenuOpen(false);
@@ -126,7 +130,6 @@ export const Header = () => {
                                 className="flex items-center space-x-2">
                                 <Logo />
                             </Link>
-
                             <div className="lg:hidden">
                                 <Button variant="outline" size="icon">
                                     <Menu className="h-6 w-6" />
@@ -217,7 +220,7 @@ export const Header = () => {
                                     </NavigationMenuItem>
                                     {menuItems.map((item) => (
                                         <NavigationMenuItem key={item.name}>
-                                            <Link href={item.href} legacyBehavior passHref>
+                                            <Link href={item.href} passHref>
                                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                                     {item.name}
                                                 </NavigationMenuLink>
