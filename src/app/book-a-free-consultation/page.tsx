@@ -1,5 +1,6 @@
 import { ConsultationForm } from "@/components/book-a-free-consultation/consultation-form";
 import { Hero } from "@/components/book-a-free-consultation/hero";
+import { WhatYouGet } from "@/components/book-a-free-consultation/what-you-get";
 import { Cta } from "@/components/home/cta";
 import { Metadata } from "next";
 
@@ -12,6 +13,7 @@ export default function BookConsultationPage() {
     return (
         <>
             <Hero />
+            <WhatYouGet />
             <ConsultationForm />
             <Cta />
         </>
