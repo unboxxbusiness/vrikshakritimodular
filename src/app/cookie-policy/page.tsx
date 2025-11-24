@@ -1,3 +1,4 @@
+import Link from 'next/link';
 
 export default function CookiePolicyPage() {
   const lastUpdatedDate = new Date().toLocaleDateString('en-US', {
