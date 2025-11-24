@@ -3,7 +3,7 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { Menu, ChevronDown, ParkingSquare, Rows, Columns, BoxSelect, RefreshCw } from 'lucide-react'
+import { Menu, ParkingSquare, Rows, Columns, BoxSelect, RefreshCw } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { Logo } from './logo'
@@ -21,6 +21,7 @@ import {
 const menuItems = [
     { name: 'Materials', href: '/materials-and-finishes' },
     { name: 'About', href: '/about' },
+    { name: 'Gallery', href: '/gallery' },
 ]
 
 const kitchenStyles = [
