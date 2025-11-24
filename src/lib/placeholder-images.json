@@ -83,6 +83,12 @@
       "description": "Luxury Finishes: Marble countertops and high-end appliances.",
       "imageUrl": "https://images.unsplash.com/photo-1585687501004-615dfdfde7f1?q=80&h=800&w=800&auto=format&fit=crop",
       "imageHint": "luxury kitchen"
+    },
+    {
+      "id": "about-hero-1",
+      "description": "A team of architects and designers collaborating over blueprints in a modern, well-lit studio.",
+      "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNDE5ODJ8MHwxfGFsbHx8fHx8fHx8fDE2NzU4MDUxMTg&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "design team collaboration"
     }
   ]
 }
