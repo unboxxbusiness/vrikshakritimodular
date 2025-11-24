@@ -38,7 +38,7 @@ export function Hero() {
     return (
         <div className="overflow-hidden">
              <BGPattern variant="grid" size={32} mask="fade-y" className="opacity-10 dark:opacity-5" />
-            <section>
+            <section className="pt-16">
                 <div className="relative pt-24 md:pt-36">
                     <div aria-hidden className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--background)_75%)]" />
                     <div className="mx-auto max-w-7xl px-6">

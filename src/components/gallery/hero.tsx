@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export function Hero() {
   return (
-    <section className="overflow-hidden py-16 md:py-32 bg-background">
+    <section className="overflow-hidden py-16 md:py-32 bg-background pt-16">
       <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12">
         <div className="relative z-10 max-w-3xl text-center mx-auto">
           <h1 className="text-4xl font-semibold lg:text-5xl">A Collection of Kitchens Designed to Inspire</h1>

@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export function Hero() {
     return (
-        <section>
+        <section className="pt-16">
             <div className="bg-muted/50 dark:bg-background py-24 md:py-32">
                 <div className="mx-auto flex flex-col px-6 md:grid md:max-w-5xl md:grid-cols-2 md:gap-12">
                     <div className="order-last mt-6 flex flex-col gap-12 md:order-first">
