@@ -1,59 +1,75 @@
 "use client";
 
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Coffee, Building, Home, Gem } from 'lucide-react';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
+import { cn } from "@/lib/utils";
+
+const options = [
+  { text: 'Breakfast Counter', description: 'Integrate a casual dining spot.', icon: <Coffee className="size-8 text-primary" /> },
+  { text: 'Tall Pantry', description: 'Maximize vertical storage space.', icon: <Building className="size-8 text-primary" /> },
+  { text: 'For Studio Homes', description: 'Compact and efficient layout.', icon: <Home className="size-8 text-primary" /> },
+  { text: 'Premium Dual-Tone', description: 'Elegant and modern aesthetic.', icon: <Gem className="size-8 text-primary" /> },
+];
 
 export function DesignOptions() {
-  const designOptionsImage = PlaceHolderImages.find(img => img.id === 'l-shaped-options-1');
-
-  const options = [
-    { text: 'L-shape with breakfast counter', icon: <Coffee className="size-5 mr-3 text-primary" /> },
-    { text: 'L-shape with tall pantry', icon: <Building className="size-5 mr-3 text-primary" /> },
-    { text: 'Compact L-shape for studio homes', icon: <Home className="size-5 mr-3 text-primary" /> },
-    { text: 'Premium L-shape with dual-tone shutters', icon: <Gem className="size-5 mr-3 text-primary" /> },
-  ];
-
   return (
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-3xl font-semibold md:text-4xl">Design Options</h2>
-            <p className="mt-4 text-muted-foreground">
-              Customize your L-shaped kitchen to match your style and needs. Here are a few popular configurations:
-            </p>
-            <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {options.map((option) => (
-                <li key={option.text} className="flex items-center text-foreground p-4 bg-muted/50 rounded-lg">
-                  {option.icon}
-                  <span>{option.text}</span>
-                </li>
-              ))}
-            </ul>
-             <div className="mt-10 flex items-center justify-start gap-x-6">
-                <Button asChild>
-                    <Link href="#">
-                        Explore L-Shaped Kitchen Designs <ArrowRight className="size-4 ml-2" />
-                    </Link>
-                </Button>
-            </div>
-          </div>
-          <div className="relative aspect-square">
-            {designOptionsImage && (
-              <Image
-                src={designOptionsImage.imageUrl}
-                alt={designOptionsImage.description}
-                data-ai-hint={designOptionsImage.imageHint}
-                fill
-                className="object-cover rounded-3xl"
-              />
-            )}
-          </div>
+        <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl font-semibold text-center md:text-4xl">Design Options</h2>
+            <p className="text-muted-foreground mt-4">Customize your L-shaped kitchen to match your style and needs. Here are a few popular configurations:</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 pt-10 max-w-7xl mx-auto">
+            {options.map((option, index) => (
+                <Feature key={option.text} title={option.text} description={option.description} icon={option.icon} index={index} />
+            ))}
+        </div>
+        <div className="mt-12 text-center">
+            <Button asChild>
+                <Link href="#">
+                    Explore L-Shaped Kitchen Designs <ArrowRight className="size-4 ml-2" />
+                </Link>
+            </Button>
         </div>
       </div>
     </section>
   );
 }
+
+const Feature = ({
+  title,
+  description,
+  icon,
+  index,
+}: {
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+  index: number;
+}) => {
+  return (
+    <div
+      className={cn(
+        "flex flex-col lg:border-r py-10 relative group/feature dark:border-neutral-800",
+        (index === 0) && "lg:border-l dark:border-neutral-800",
+        "border-b dark:border-neutral-800",
+        index >= 0 && "lg:border-b-0",
+      )}
+    >
+      <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
+      <div className="mb-4 relative z-10 px-10 text-primary">
+        {icon}
+      </div>
+      <div className="text-lg font-bold mb-2 relative z-10 px-10">
+        <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-green-500 transition-all duration-200 origin-center" />
+        <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100">
+          {title}
+        </span>
+      </div>
+      <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
+        {description}
+      </p>
+    </div>
+  );
+};
