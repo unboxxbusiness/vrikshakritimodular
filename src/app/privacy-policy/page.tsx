@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
   }, []);
 
   return (
-    <div className="bg-background">
+    <div className="bg-background pt-16">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="mx-auto max-w-4xl">
           <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-center mb-4">
