@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import {
   Sheet,
   SheetContent,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
 import {
@@ -75,7 +76,7 @@ export function Header() {
       setIsScrolled(window.scrollY > 10)
     }
     window.addEventListener("scroll", handleScroll)
-    handleScroll(); 
+    handleScroll();
     return () => {
       window.removeEventListener("scroll", handleScroll)
     }
@@ -145,6 +146,7 @@ export function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="left">
+                <SheetTitle className="sr-only">Main Menu</SheetTitle>
                 <div className="flex h-full flex-col py-6">
                     <div className="mb-8">
                         <Link href="/" className="flex items-center gap-2 font-bold text-lg" onClick={() => setMobileMenuOpen(false)}>
@@ -198,7 +200,7 @@ const ListItem = React.forwardRef<
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a
+        <Link
           ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
@@ -210,7 +212,7 @@ const ListItem = React.forwardRef<
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
-        </a>
+        </Link>
       </NavigationMenuLink>
     </li>
   )
