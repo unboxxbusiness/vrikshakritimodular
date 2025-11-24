@@ -39,7 +39,7 @@
     {
       "id": "kitchen-costing-1",
       "description": "A modern kitchen with a calculator and design plans on the counter, illustrating the concept of kitchen cost calculation.",
-      "imageUrl": "https://images.unsplash.com/photo-1651107786750-fbefe0bdd0a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8a2l0Y2hlbiUyMGNvc3R8ZW58MHx8fHwxNzYzOTA5ODM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1651107786750-fbefe0bdd0a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8a2l0Y2hlbiUyMGNvc3R8ZW58MHx8fHwxNzYzOTA5ODM1fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "kitchen cost"
     },
     {
@@ -141,7 +141,7 @@
     {
       "id": "l-shaped-kitchen-hero-1",
       "description": "A bright and modern L-shaped kitchen with white cabinets and wooden accents.",
-      "imageUrl": "https://images.unsplash.com/photo-1600585152225-358b54d5a1a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsLXNoYXBlZCUyMGtpdGNoZW58ZW58MHx8fHwxNzY0MDEyMzg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/dhrigocvd/image/upload/v1763960884/Gemini_Generated_Image_wkk0fiwkk0fiwkk0_n3klqn.png",
       "imageHint": "l-shaped kitchen"
     },
     {
@@ -153,7 +153,7 @@
     {
       "id": "l-shaped-options-1",
       "description": "An L-shaped kitchen featuring a breakfast counter with bar stools.",
-      "imageUrl": "https://images.unsplash.com/photo-1594412267655-b44b8a2e3794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwYnJlYWtmYXN0JTIwY291bnRlcnxlbnwwfHx8fDE3NjQxMDMzMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1594412267655-b44b8a2e3794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwYnJlYWtmYXN0JTIwY291bnRlcnxlbnwwfHx8fDE3NjQxMDMzMDF8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "kitchen breakfast counter"
     },
     {
@@ -165,7 +165,7 @@
     {
       "id": "u-shaped-best-for-1",
       "description": "A large, happy family gathered in a spacious kitchen, preparing a meal together.",
-      "imageUrl": "https://images.unsplash.com/photo-1577103233388-b2a47b1655e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYXJnZSUyMGZhbWlseSUyMGNvb2tpbmd8ZW58MHx8fHwxNzY0MTk3NzAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1577103233388-b2a47b1655e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYXJnZSUyMGZhbWlseSUyMGNvb2tpbmd8ZW58MHx8fHwxNzY0MTk3NzAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "large family cooking"
     },
     {
