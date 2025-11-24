@@ -31,6 +31,7 @@ export function KitchenStyles() {
           description:
             "High-performance layout used by professional chefs.",
           icon: <Columns className="size-8" />,
+          href: "/parallel-kitchen",
         },
         {
           title: "Island Kitchen",

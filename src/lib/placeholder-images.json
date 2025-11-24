@@ -161,6 +161,24 @@
       "description": "A straight kitchen featuring handleless cabinets and integrated appliances for a seamless look.",
       "imageUrl": "https://images.unsplash.com/photo-1596205267383-176de15c15e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYW5kbGVsZXNzJTIwa2l0Y2hlbnxlbnwwfHx8fDE3NjQyMTAwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "handleless kitchen"
+    },
+    {
+      "id": "parallel-kitchen-hero-1",
+      "description": "A long, narrow galley kitchen with efficient workflows, dark cabinetry, and stainless steel appliances.",
+      "imageUrl": "https://images.unsplash.com/photo-1633519522139-e8d975249f39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYXJhbGxlbCUyMGtpdGNoZW58ZW58MHx8fHwxNzY0MjM5MzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "parallel kitchen"
+    },
+    {
+      "id": "parallel-best-for-1",
+      "description": "A professional chef working efficiently in a well-organized commercial kitchen.",
+      "imageUrl": "https://images.unsplash.com/photo-1556911220-bff31c812dba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGVmJTIwa2l0Y2hlbnxlbnwwfHx8fDE3NjQyMzkzMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chef kitchen"
+    },
+    {
+      "id": "parallel-options-1",
+      "description": "A parallel kitchen with a sink and wet area on one side, and a dry cooking zone on the other.",
+      "imageUrl": "https://images.unsplash.com/photo-1628529358485-a7b2938c8239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZXQlMjBkcngtS2l0Y2hlbnxlbnwwfHx8fDE3NjQyMzkzMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wet dry kitchen"
     }
   ]
 }
