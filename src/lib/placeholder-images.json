@@ -89,6 +89,12 @@
       "description": "A team of architects and designers collaborating over blueprints in a modern, well-lit studio.",
       "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNDE5ODJ8MHwxfGFsbHx8fHx8fHx8fDE2NzU4MDUxMTg&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "design team collaboration"
+    },
+    {
+      "id": "what-we-do-1",
+      "description": "A person sketching a kitchen layout, with material samples and a laptop showing a 3D render in the background.",
+      "imageUrl": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkZXNpZ24lMjBjb25zdWx0YXRpb258ZW58MHx8fHwxNzYzOTk3NDUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "design consultation"
     }
   ]
 }
