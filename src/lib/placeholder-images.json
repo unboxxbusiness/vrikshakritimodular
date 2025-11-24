@@ -189,61 +189,61 @@
     {
       "id": "straight-options-1",
       "description": "A straight kitchen featuring handleless cabinets and integrated appliances for a seamless look.",
-      "imageUrl": "https://images.unsplash.com/photo-1596205267383-176de15c15e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYW5kbGVsZXNzJTIwa2l0Y2hlbnxlbnwwfHx8fDE3NjQyMTAwMDB8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1596205267383-176de15c15e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYW5kbGVsZXNzJTIwa2l0Y2hlbnxlbnwwfHx8fDE3NjQyMTAwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "handleless kitchen"
     },
     {
       "id": "parallel-kitchen-hero-1",
       "description": "A long, narrow galley kitchen with efficient workflows, dark cabinetry, and stainless steel appliances.",
-      "imageUrl": "https://images.unsplash.com/photo-1633519522139-e8d975249f39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYXJhbGxlbCUyMGtpdGNoZW58ZW58MHx8fHwxNzY0MjM5MzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/dhrigocvd/image/upload/v1763966705/Gemini_Generated_Image_mi48j4mi48j4mi48_pjs6vj.png",
       "imageHint": "parallel kitchen"
     },
     {
       "id": "parallel-best-for-1",
       "description": "A professional chef working efficiently in a well-organized commercial kitchen.",
-      "imageUrl": "https://images.unsplash.com/photo-1556911220-bff31c812dba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGVmJTIwa2l0Y2hlbnxlbnwwfHx8fDE3NjQyMzkzMTF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556911220-bff31c812dba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGVmJTIwa2l0Y2hlbnxlbnwwfHx8fDE3NjQyMzkzMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "chef kitchen"
     },
     {
       "id": "parallel-options-1",
       "description": "A parallel kitchen with a sink and wet area on one side, and a dry cooking zone on the other.",
-      "imageUrl": "https://images.unsplash.com/photo-1628529358485-a7b2938c8239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZXQlMjBkcngtS2l0Y2hlbnxlbnwwfHx8fDE3NjQyMzkzMTF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628529358485-a7b2938c8239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZXQlMjBkcngtS2l0Y2hlbnxlbnwwfHx8fDE3NjQyMzkzMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "wet dry kitchen"
     },
     {
       "id": "island-kitchen-hero-1",
       "description": "A luxurious island kitchen with marble countertops and a stunning view, representing premium modern living.",
-      "imageUrl": "https://images.unsplash.com/photo-1600585152225-358b54d5a1a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpc2xhbmQlMjBraXRjaGVufGVufDB8fHx8MTc2NDI0MjAwMHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1600585152225-358b54d5a1a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpc2xhbmQlMjBraXRjaGVufGVufDB8fHx8MTc2NDI0MjAwMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "island kitchen"
     },
     {
       "id": "island-best-for-1",
       "description": "A spacious, open-plan living area with a large kitchen island, perfect for entertaining.",
-      "imageUrl": "https://images.unsplash.com/photo-161822119571O-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcmVtaXVtJTIwaG9tZXxlbnwwfHx8fDE3NjQyNDIwMDB8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-161822119571O-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcmVtaXVtJTIwaG9tZXxlbnwwfHx8fDE3NjQyNDIwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "premium home"
     },
     {
       "id": "island-options-1",
       "description": "A close-up of a kitchen island that incorporates a built-in cooktop.",
-      "imageUrl": "https://images.unsplash.com/photo-1623998184288-3e4f3a789a7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwaXNsYW5kJTIwaG9ifGVufDB8fHx8MTc2NDI0MjAwMHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1623998184288-3e4f3a789a7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwaXNsYW5kJTIwaG9ifGVufDB8fHx8MTc2NDI0MjAwMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "kitchen island hob"
     },
     {
       "id": "semi-modular-hero-1",
       "description": "A split-image showing a before-and-after of a kitchen renovation, with one side old and the other modern and semi-modular.",
-      "imageUrl": "https://images.unsplash.com/photo-1599691025028-0049755490c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwcmVub3ZhdGlvbnxlbnwwfHx8fDE3NjQyNDQwMDF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599691025028-0049755490c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwcmVub3ZhdGlvbnxlbnwwfHx8fDE3NjQyNDQwMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "kitchen renovation"
     },
     {
       "id": "semi-modular-best-for-1",
       "description": "A person happily painting a wall in their apartment, representing a budget-friendly home improvement project.",
-      "imageUrl": "https://images.unsplash.com/photo-1552057718-52b88b394043?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidWRnZXQlMjByZW5vdmF0aW9ufGVufDB8fHx8MTc2NDI0NDAwMXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1552057718-52b88b394043?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidWRnZXQlMjByZW5vdmF0aW9ufGVufDB8fHx8MTc2NDI0NDAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "budget renovation"
     },
     {
       "id": "semi-modular-options-1",
       "description": "A close-up of new, stylish cabinet doors being installed on an existing kitchen frame.",
-      "imageUrl": "https://images.unsplash.com/photo-1601175878411-a873c5b5978f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZXclMjBraXRjaGVuJTIwY2FiaW5ldHN8ZW58MHx8fHwxNzY0MjQ0MDAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1601175878411-a873c5b5978f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZXclMjBraXRjaGVuJTIwY2FiaW5ldHN8ZW58MHx8fHwxNzY0MjQ0MDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "new kitchen cabinets"
     },
     {
