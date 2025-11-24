@@ -16,7 +16,7 @@ export function Hero() {
           <Image
             className="rounded-lg grayscale"
             src={heroImage.imageUrl}
-            alt={heroImage.description}
+            alt={heroImage.description || "A flat lay of various kitchen material samples including wood, marble, and fabric."}
             data-ai-hint={heroImage.imageHint}
             height={800}
             width={1200}

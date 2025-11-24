@@ -5,7 +5,7 @@ export function Logo() {
     <div className="relative h-10 w-32">
       <Image
         src="https://res.cloudinary.com/dhrigocvd/image/upload/v1763972114/Gemini_Generated_Image_rw369trw369trw36-removebg-preview_1_utsfjk.png"
-        alt="Vrikshakriti Logo"
+        alt="Vrikshakriti Modular Kitchens Logo"
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         style={{ objectFit: 'contain' }}

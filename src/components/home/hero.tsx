@@ -136,7 +136,7 @@ export function Hero() {
                                 <Image
                                     className="bg-background aspect-video relative rounded-2xl"
                                     src="https://res.cloudinary.com/dhrigocvd/image/upload/v1763958686/Gemini_Generated_Image_wkk0fiwkk0fiwkk0_zgz3un.png"
-                                    alt="Modern modular kitchen"
+                                    alt="A modern and stylish modular kitchen by Vrikshakriti, featuring wooden cabinets and white countertops."
                                     width={2940}
                                     height={1654}
                                 />

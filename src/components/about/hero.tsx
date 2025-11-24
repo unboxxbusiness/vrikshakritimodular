@@ -24,7 +24,7 @@ export function Hero() {
 
                         <div className="mt-auto grid grid-cols-[auto_1fr] gap-3">
                             <div className="bg-background flex size-12 items-center justify-center rounded-lg border">
-                                <Image src="https://picsum.photos/seed/person1/100/100" alt="Priya & Rohan S." width={48} height={48} className="rounded-full" />
+                                <Image src="https://picsum.photos/seed/person1/100/100" alt="Testimonial from Priya & Rohan S." width={48} height={48} className="rounded-full" />
                             </div>
                             <blockquote>
                                 <p className="text-sm">"The team at Vrikshakriti transformed our vision into a stunning reality. Their attention to detail and commitment to quality is unmatched."</p>

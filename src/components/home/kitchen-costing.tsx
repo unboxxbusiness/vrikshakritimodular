@@ -56,7 +56,7 @@ export function KitchenCosting() {
                            {costImage && (
                                 <Image 
                                     src={costImage.imageUrl} 
-                                    alt={costImage.description}
+                                    alt={costImage.description || "A modern kitchen with design plans, illustrating kitchen cost calculation."}
                                     data-ai-hint={costImage.imageHint}
                                     fill
                                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
