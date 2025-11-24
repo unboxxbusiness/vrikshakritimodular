@@ -2,18 +2,96 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { Menu } from 'lucide-react'
+import { Menu, ChevronDown, ParkingSquare, Rows, Columns, BoxSelect, RefreshCw } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { Logo } from './logo'
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
 
 const menuItems = [
-    { name: 'Kitchen Styles', href: '/#kitchen-styles' },
     { name: 'Materials', href: '/materials-and-finishes' },
     { name: 'About', href: '/about' },
     { name: 'FAQ', href: '/faq' },
 ]
+
+const kitchenStyles = [
+  {
+    title: 'L-Shaped Kitchen',
+    href: '/l-shaped-kitchen',
+    description: 'Space-efficient, modern, and perfect for small to mid-sized homes.',
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-l-shape"><path d="M5 5v14h14"/></svg>
+  },
+  {
+    title: 'U-Shaped Kitchen',
+    href: '/u-shaped-kitchen',
+    description: 'Maximum storage, best for families who love cooking together.',
+    icon: <ParkingSquare className="size-6" />
+  },
+  {
+    title: 'Straight Kitchen',
+    href: '/straight-kitchen',
+    description: 'Clean, minimal layout ideal for compact spaces.',
+    icon: <Rows className="size-6" />
+  },
+  {
+    title: 'Parallel Kitchen',
+    href: '/parallel-kitchen',
+    description: 'High-performance layout used by professional chefs.',
+    icon: <Columns className="size-6" />
+  },
+  {
+    title: 'Island Kitchen',
+    href: '/island-kitchen',
+    description: 'A premium statement for open layouts and large homes.',
+    icon: <BoxSelect className="size-6" />
+  },
+  {
+    title: 'Semi-Modular Kitchen',
+    href: '/semi-modular-kitchen',
+    description: 'Upgrade your existing kitchen with minimal disruption.',
+    icon: <RefreshCw className="size-6" />
+  },
+];
+
+
+const ListItem = React.forwardRef<
+  React.ElementRef<"a">,
+  React.ComponentPropsWithoutRef<"a"> & { icon?: React.ReactNode }
+>(({ className, title, children, icon, ...props }, ref) => {
+  return (
+    <li>
+      <NavigationMenuLink asChild>
+        <a
+          ref={ref}
+          className={cn(
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            className
+          )}
+          {...props}
+        >
+          <div className="flex items-center gap-2">
+            {icon && <div className="text-primary">{icon}</div>}
+            <div className="text-sm font-medium leading-none">{title}</div>
+          </div>
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+            {children}
+          </p>
+        </a>
+      </NavigationMenuLink>
+    </li>
+  )
+})
+ListItem.displayName = "ListItem"
+
 
 export const Header = () => {
     const [isScrolled, setIsScrolled] = React.useState(false);
@@ -22,8 +100,6 @@ export const Header = () => {
 
     React.useEffect(() => {
         setHasMounted(true);
-        if (typeof window === 'undefined') return;
-
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
         };
@@ -57,31 +133,6 @@ export const Header = () => {
                                     <span className="sr-only">Open menu</span>
                                 </Button>
                             </div>
-                        </div>
-
-                        <div className="absolute inset-0 m-auto hidden size-fit lg:block">
-                            <ul className="flex gap-8 text-sm font-medium">
-                                {menuItems.map((item, index) => (
-                                    <li key={index}>
-                                        <Link
-                                            href={item.href}
-                                            className="text-foreground/80 hover:text-foreground block duration-150">
-                                            <span>{item.name}</span>
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        <div className="hidden lg:flex lg:w-auto lg:gap-3">
-                            <Button
-                                asChild
-                                size="sm"
-                                >
-                                <Link href="#">
-                                    <span>Book a Free Design Consultation</span>
-                                </Link>
-                            </Button>
                         </div>
                     </div>
                 </div>
@@ -118,6 +169,9 @@ export const Header = () => {
                                                 <Logo />
                                                 <span>Vrikshakriti</span>
                                             </Link>
+                                            <Link href="/#kitchen-styles" onClick={handleLinkClick} className="text-muted-foreground hover:text-foreground">
+                                                Kitchen Styles
+                                            </Link>
                                             {menuItems.map((item, index) => (
                                                 <Link
                                                     key={index}
@@ -141,19 +195,39 @@ export const Header = () => {
                             </div>
                         </div>
 
-                        <div className="absolute inset-0 m-auto hidden size-fit lg:block">
-                            <ul className="flex gap-8 text-sm font-medium">
-                                {menuItems.map((item, index) => (
-                                    <li key={index}>
-                                        <Link
-                                            href={item.href}
-                                            className="text-foreground/80 hover:text-foreground block duration-150">
-                                            <span>{item.name}</span>
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
+                         <div className="absolute inset-0 m-auto hidden size-fit lg:block">
+                             <NavigationMenu>
+                                <NavigationMenuList>
+                                    <NavigationMenuItem>
+                                    <NavigationMenuTrigger>Kitchen Styles</NavigationMenuTrigger>
+                                    <NavigationMenuContent>
+                                        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                                        {kitchenStyles.map((component) => (
+                                            <ListItem
+                                            key={component.title}
+                                            title={component.title}
+                                            href={component.href}
+                                            icon={component.icon}
+                                            >
+                                            {component.description}
+                                            </ListItem>
+                                        ))}
+                                        </ul>
+                                    </NavigationMenuContent>
+                                    </NavigationMenuItem>
+                                    {menuItems.map((item) => (
+                                        <NavigationMenuItem key={item.name}>
+                                            <Link href={item.href} legacyBehavior passHref>
+                                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                                    {item.name}
+                                                </NavigationMenuLink>
+                                            </Link>
+                                        </NavigationMenuItem>
+                                    ))}
+                                </NavigationMenuList>
+                            </NavigationMenu>
                         </div>
+
 
                         <div className="hidden lg:flex lg:w-auto lg:gap-3">
                             <Button
