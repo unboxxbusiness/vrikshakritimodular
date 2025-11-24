@@ -38,6 +38,7 @@ export function KitchenStyles() {
           description:
             "A premium statement for open layouts and large homes.",
           icon: <BoxSelect className="size-8" />,
+          href: "/island-kitchen",
         },
         {
           title: "Semi-Modular / Renovation",
