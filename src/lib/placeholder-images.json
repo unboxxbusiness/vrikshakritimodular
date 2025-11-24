@@ -107,6 +107,12 @@
       "description": "A beautifully finished modern kitchen with a focus on quality craftsmanship and detail.",
       "imageUrl": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxxdWFsaXR5JTIwY3JhZnRzbWFuc2hpcHxlbnwwfHx8fDE3NjQwMDYwODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "quality craftsmanship"
+    },
+    {
+      "id": "l-shaped-kitchen-hero-1",
+      "description": "A bright and modern L-shaped kitchen with white cabinets and wooden accents.",
+      "imageUrl": "https://images.unsplash.com/photo-1600585152225-358b54d5a1a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsLXNoYXBlZCUyMGtpdGNoZW58ZW58MHx8fHwxNzY0MDEyMzg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "l-shaped kitchen"
     }
   ]
 }
