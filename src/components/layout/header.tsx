@@ -91,7 +91,7 @@ const CollapsibleSection = ({
     <div className="w-full">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center justify-between rounded-md p-3 text-base font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground hover:no-underline -m-3"
+        className="flex w-full items-center justify-between rounded-md p-3 text-lg font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground hover:no-underline -m-3"
       >
         <span>{title}</span>
         <motion.div
@@ -113,9 +113,11 @@ const CollapsibleSection = ({
               collapsed: { opacity: 0, height: 0 },
             }}
             transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
-            className="overflow-hidden pl-6"
+            className="overflow-hidden pl-4"
           >
-            {children}
+            <div className="pt-2 flex flex-col items-start">
+              {children}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -230,7 +232,7 @@ export function Header() {
                       <Link
                         key={item.name}
                         href={item.href}
-                        className="-m-3 block rounded-md p-3 text-base font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+                        className="-m-3 block rounded-md p-3 text-lg font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground"
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {item.name}
