@@ -9,10 +9,10 @@ export function Hero() {
   return (
     <section className="py-16 md:py-32 bg-background">
       <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
-        <div className="relative z-10 max-w-3xl space-y-6">
-          <h1 className="text-4xl font-semibold lg:text-5xl">L-Shaped Modular Kitchens</h1>
-          <p className="text-muted-foreground">
-            Discover the perfect blend of functionality and style with our L-Shaped modular kitchens. Ideal for small to medium-sized spaces, this layout maximizes corner space and creates an efficient work triangle.
+        <div className="relative z-10 max-w-3xl space-y-6 text-center mx-auto">
+          <h1 className="text-4xl font-semibold lg:text-5xl">L-Shaped Modular Kitchens – Smart, Space-Saving & Stylish</h1>
+          <p className="text-muted-foreground text-lg">
+            The L-Shaped modular kitchen is one of the most practical and popular layouts for modern Indian homes. Designed to maximize corner space and open up the room, it offers a perfect balance of efficiency and elegance.
           </p>
         </div>
         {heroImage && (

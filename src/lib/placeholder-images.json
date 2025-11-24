@@ -113,6 +113,18 @@
       "description": "A bright and modern L-shaped kitchen with white cabinets and wooden accents.",
       "imageUrl": "https://images.unsplash.com/photo-1600585152225-358b54d5a1a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsLXNoYXBlZCUyMGtpdGNoZW58ZW58MHx8fHwxNzY0MDEyMzg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "l-shaped kitchen"
+    },
+    {
+      "id": "l-shaped-best-for-1",
+      "description": "A family enjoying a meal in a bright, open-plan kitchen and dining area.",
+      "imageUrl": "https://images.unsplash.com/photo-1600607687939-ce8a69061e36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvcGVuJTIwbGF5b3V0JTIwa2l0Y2hlbnxlbnwwfHx8fDE3NjQxMDMzMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "open layout kitchen"
+    },
+    {
+      "id": "l-shaped-options-1",
+      "description": "An L-shaped kitchen featuring a breakfast counter with bar stools.",
+      "imageUrl": "https://images.unsplash.com/photo-1594412267655-b44b8a2e3794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwYnJlYWtmYXN0JTIwY291bnRlcnxlbnwwfHx8fDE3NjQxMDMzMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kitchen breakfast counter"
     }
   ]
 }
