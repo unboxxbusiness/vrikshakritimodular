@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react'
@@ -194,11 +195,11 @@ export const Header = () => {
                                     </NavigationMenuItem>
                                     {menuItems.map((item) => (
                                         <NavigationMenuItem key={item.name}>
-                                            <Link href={item.href} legacyBehavior={false} passHref>
-                                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                                    {item.name}
-                                                </NavigationMenuLink>
-                                            </Link>
+                                            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                                              <Link href={item.href}>
+                                                {item.name}
+                                              </Link>
+                                            </NavigationMenuLink>
                                         </NavigationMenuItem>
                                     ))}
                                 </NavigationMenuList>
