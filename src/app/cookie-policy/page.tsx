@@ -1,11 +1,19 @@
+
+'use client';
+
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 export default function CookiePolicyPage() {
-  const lastUpdatedDate = new Date().toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
+  const [lastUpdatedDate, setLastUpdatedDate] = useState('');
+
+  useEffect(() => {
+    setLastUpdatedDate(new Date().toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    }));
+  }, []);
 
   return (
     <div className="bg-background">
@@ -14,9 +22,11 @@ export default function CookiePolicyPage() {
           <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-center mb-4">
             COOKIE POLICY – VRIKSHAKRITI MODULAR KITCHENS
           </h1>
-          <p className="text-sm text-muted-foreground text-center mb-12">
-            Last Updated: {lastUpdatedDate}
-          </p>
+          {lastUpdatedDate && (
+            <p className="text-sm text-muted-foreground text-center mb-12">
+              Last Updated: {lastUpdatedDate}
+            </p>
+          )}
 
           <div className="space-y-6 text-foreground/80">
             <p>
