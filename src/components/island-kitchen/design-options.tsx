@@ -27,8 +27,8 @@ export function DesignOptions() {
         </div>
         <div className="mt-12 text-center">
             <Button asChild>
-                <Link href="#">
-                    Explore Island Kitchen Designs <ArrowRight className="size-4 ml-2" />
+                <Link href="#gallery">
+                    View Gallery <ArrowRight className="size-4 ml-2" />
                 </Link>
             </Button>
         </div>
