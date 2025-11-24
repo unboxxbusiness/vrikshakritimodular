@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '../ui/button';
 import Link from 'next/link';
+import { BGPattern } from '../ui/bg-pattern';
 
 export function KitchenCosting() {
     const costImage = PlaceHolderImages.find(img => img.id === 'kitchen-costing-1');
@@ -25,8 +26,9 @@ export function KitchenCosting() {
         },
     ]
     return (
-        <section className="py-16 md:py-32 bg-secondary/30">
-            <div className="mx-auto max-w-6xl px-6">
+        <section className="relative py-16 md:py-32 bg-secondary/30 overflow-hidden">
+            <BGPattern variant="grid" size={32} mask="fade-y" className="opacity-10" />
+            <div className="mx-auto max-w-6xl px-6 relative">
                 <div className="grid items-center gap-12 md:grid-cols-2 md:gap-12 lg:grid-cols-5 lg:gap-24">
                     <div className="lg:col-span-2">
                         <div className="md:pr-6 lg:pr-0">
@@ -57,6 +59,7 @@ export function KitchenCosting() {
                                     alt={costImage.description}
                                     data-ai-hint={costImage.imageHint}
                                     fill
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                     className="rounded-[15px] object-cover" 
                                 />
                            )}
