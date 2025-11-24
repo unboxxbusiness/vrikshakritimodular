@@ -14,8 +14,6 @@ const benefits = [
 ];
 
 export function WhyWhatsapp() {
-    const featureImage = PlaceHolderImages.find(img => img.id === 'what-we-do-1');
-
     return (
         <section className="py-16 md:py-32 bg-muted/50">
             <div className="mx-auto max-w-6xl px-6">
@@ -38,16 +36,14 @@ export function WhyWhatsapp() {
                     </div>
                     <div className="relative rounded-3xl p-3 lg:col-span-3">
                         <div className="relative aspect-[4/3] rounded-2xl">
-                           {featureImage && (
-                                <Image 
-                                    src={featureImage.imageUrl} 
-                                    alt={featureImage.description}
-                                    data-ai-hint={featureImage.imageHint}
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                                    className="rounded-[15px] object-cover" 
-                                />
-                           )}
+                           <Image 
+                                src="https://res.cloudinary.com/dhrigocvd/image/upload/v1763975015/Gemini_Generated_Image_p04g6rp04g6rp04g_ftipbw.png" 
+                                alt="A phone showing a WhatsApp conversation about kitchen design."
+                                data-ai-hint="WhatsApp chat"
+                                fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                className="rounded-[15px] object-cover" 
+                            />
                         </div>
                     </div>
                 </div>
