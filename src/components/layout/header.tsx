@@ -12,19 +12,22 @@ const menuItems = [
     { name: 'Kitchen Styles', href: '/#kitchen-styles' },
     { name: 'Materials', href: '/materials-and-finishes' },
     { name: 'About', href: '/about' },
-    { name: 'Process', href: '/#design-process' },
     { name: 'FAQ', href: '/faq' },
 ]
 
 export const Header = () => {
-    const [isScrolled, setIsScrolled] = React.useState(false)
+    const [isScrolled, setIsScrolled] = React.useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+    const [hasMounted, setHasMounted] = React.useState(false);
 
     React.useEffect(() => {
+        setHasMounted(true);
+        if (typeof window === 'undefined') return;
+
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
         };
-        handleScroll(); // Set initial state
+        handleScroll();
         window.addEventListener('scroll', handleScroll, { passive: true });
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
@@ -33,6 +36,59 @@ export const Header = () => {
     const handleLinkClick = () => {
         setIsMobileMenuOpen(false);
     };
+
+    if (!hasMounted) {
+        return (
+            <header>
+            <nav className="fixed z-20 w-full px-2">
+                <div className={'mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12'}>
+                    <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
+                        <div className="flex w-full justify-between lg:w-auto">
+                            <Link
+                                href="/"
+                                aria-label="home"
+                                className="flex items-center space-x-2">
+                                <Logo />
+                            </Link>
+
+                            <div className="lg:hidden">
+                                <Button variant="outline" size="icon">
+                                    <Menu className="h-6 w-6" />
+                                    <span className="sr-only">Open menu</span>
+                                </Button>
+                            </div>
+                        </div>
+
+                        <div className="absolute inset-0 m-auto hidden size-fit lg:block">
+                            <ul className="flex gap-8 text-sm font-medium">
+                                {menuItems.map((item, index) => (
+                                    <li key={index}>
+                                        <Link
+                                            href={item.href}
+                                            className="text-foreground/80 hover:text-foreground block duration-150">
+                                            <span>{item.name}</span>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div className="hidden lg:flex lg:w-auto lg:gap-3">
+                            <Button
+                                asChild
+                                size="sm"
+                                >
+                                <Link href="#">
+                                    <span>Book a Free Design Consultation</span>
+                                </Link>
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        );
+    }
 
     return (
         <header>
