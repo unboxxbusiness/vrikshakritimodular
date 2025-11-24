@@ -10,7 +10,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-import { Facebook, Instagram, Linkedin, Moon, Send, Sun, Twitter } from "lucide-react"
+import { ArrowRight, Facebook, Instagram, Linkedin, Moon, Send, Sun, Twitter } from "lucide-react"
 import { Logo } from "./logo"
 import Link from "next/link"
 
@@ -47,24 +47,15 @@ export function Footer() {
                 <Logo />
                 <span>Vrikshakriti</span>
             </Link>
-            <p className="mb-6 text-muted-foreground">
-              Join our newsletter for the latest updates and exclusive offers.
+            <h3 className="text-xl font-semibold">Ready to build your dream kitchen?</h3>
+            <p className="mb-6 mt-2 text-muted-foreground">
+              Book a free design consultation with our experts today.
             </p>
-            <form className="relative">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="pr-12 backdrop-blur-sm"
-              />
-              <Button
-                type="submit"
-                size="icon"
-                className="absolute right-1 top-1 h-8 w-8 rounded-full bg-primary text-primary-foreground transition-transform hover:scale-105"
-              >
-                <Send className="h-4 w-4" />
-                <span className="sr-only">Subscribe</span>
-              </Button>
-            </form>
+            <Button asChild>
+                <Link href="#">
+                    Book Free Consultation <ArrowRight className="size-4 ml-2" />
+                </Link>
+            </Button>
           </div>
           <div>
             <h3 className="mb-4 text-lg font-semibold">Quick Links</h3>
