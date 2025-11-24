@@ -75,12 +75,12 @@ export function Footer() {
               <Link href="/about" className="block transition-colors hover:text-primary">
                 About Us
               </Link>
-              <a href="#" className="block transition-colors hover:text-primary">
-                Services
-              </a>
-              <a href="#" className="block transition-colors hover:text-primary">
-                Portfolio
-              </a>
+              <Link href="/materials-and-finishes" className="block transition-colors hover:text-primary">
+                Materials
+              </Link>
+              <Link href="/faq" className="block transition-colors hover:text-primary">
+                FAQ
+              </Link>
               <a href="#" className="block transition-colors hover:text-primary">
                 Contact
               </a>

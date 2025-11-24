@@ -13,6 +13,7 @@ const menuItems = [
     { name: 'Materials', href: '/materials-and-finishes' },
     { name: 'About', href: '/about' },
     { name: 'Process', href: '/#design-process' },
+    { name: 'FAQ', href: '/faq' },
 ]
 
 export const Header = () => {
