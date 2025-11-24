@@ -18,6 +18,7 @@ const menuItems = [
 
 export const Header = () => {
     const [isScrolled, setIsScrolled] = React.useState(false)
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
     React.useEffect(() => {
         const handleScroll = () => {
@@ -26,6 +27,11 @@ export const Header = () => {
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
+
+    const handleLinkClick = () => {
+        setIsMobileMenuOpen(false);
+    };
+
     return (
         <header>
             <nav className="fixed z-20 w-full px-2">
@@ -40,7 +46,7 @@ export const Header = () => {
                             </Link>
 
                             <div className="lg:hidden">
-                                <Sheet>
+                                <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
                                     <SheetTrigger asChild>
                                         <Button variant="outline" size="icon">
                                             <Menu className="h-6 w-6" />
@@ -50,7 +56,7 @@ export const Header = () => {
                                     <SheetContent side="right">
                                         <SheetTitle className="sr-only">Menu</SheetTitle>
                                         <nav className="grid gap-6 text-lg font-medium mt-10">
-                                            <Link href="/" className="flex items-center gap-2 font-bold text-lg mb-4">
+                                            <Link href="/" onClick={handleLinkClick} className="flex items-center gap-2 font-bold text-lg mb-4">
                                                 <Logo />
                                                 <span>Vrikshakriti</span>
                                             </Link>
@@ -58,6 +64,7 @@ export const Header = () => {
                                                 <Link
                                                     key={index}
                                                     href={item.href}
+                                                    onClick={handleLinkClick}
                                                     className="text-muted-foreground hover:text-foreground"
                                                 >
                                                     {item.name}
@@ -65,12 +72,12 @@ export const Header = () => {
                                             ))}
                                             <div className="flex w-full flex-col space-y-3 pt-6">
                                                 <Button asChild variant="outline">
-                                                    <Link href="#">
+                                                    <Link href="#" onClick={handleLinkClick}>
                                                         <span>Login</span>
                                                     </Link>
                                                 </Button>
                                                 <Button asChild>
-                                                    <Link href="#">
+                                                    <Link href="#" onClick={handleLinkClick}>
                                                         <span>Sign Up</span>
                                                     </Link>
                                                 </Button>
