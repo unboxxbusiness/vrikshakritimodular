@@ -54,8 +54,10 @@ export function PortfolioGallery() {
                     Browse a collection of real modular kitchens and 3D concepts crafted by our design team.
                 </p>
             </div>
-            <div className="flex items-center gap-2 h-[400px] w-full max-w-5xl mt-10 px-4">
-                {portfolioImages.map((item, idx) => (
+            
+            {/* Desktop View */}
+            <div className="hidden md:flex items-center gap-2 h-[400px] w-full max-w-5xl mt-10 px-4">
+                {portfolioImages.map((item) => (
                     <div
                         key={item.id}
                         className="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full"
@@ -70,6 +72,22 @@ export function PortfolioGallery() {
                     </div>
                 ))}
             </div>
+
+            {/* Mobile View */}
+            <div className="grid grid-cols-2 md:hidden gap-4 mt-10 px-4 w-full">
+                {portfolioImages.map((item) => (
+                    <div key={item.id} className="relative aspect-square rounded-lg overflow-hidden">
+                        <Image
+                            className="h-full w-full object-cover object-center"
+                            src={item.imageUrl}
+                            alt={item.description}
+                            data-ai-hint={item.imageHint}
+                            fill
+                        />
+                    </div>
+                ))}
+            </div>
+
             <div className="mt-12 text-center">
                 <Button asChild variant="ghost">
                     <Link href="/gallery">
