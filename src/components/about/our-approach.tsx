@@ -2,15 +2,15 @@
 
 import { cn } from "@/lib/utils";
 import {
-  IconAdjustmentsBolt,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconHeart,
-  IconHelp,
-  IconRouteAltLeft,
-  IconTerminal2,
-} from "@tabler/icons-react";
+  Heart,
+  HelpCircle,
+  Maximize,
+  DollarSign,
+  Cloud,
+  SlidersHorizontal,
+  Route,
+  Terminal,
+} from "lucide-react";
 
 export function OurApproach() {
   const features = [
@@ -18,47 +18,47 @@ export function OurApproach() {
       title: "Design with Purpose",
       description:
         "Every kitchen we create is planned around real-life usage—cooking habits, storage needs, ergonomics, movement flow, and family lifestyle.",
-      icon: <IconTerminal2 />,
+      icon: <Terminal />,
     },
     {
       title: "Honest Craftsmanship",
       description:
         "We use premium materials, innovative hardware, and factory-finished precision to ensure strength, durability, and a premium finish.",
-      icon: <IconEaseInOut />,
+      icon: <SlidersHorizontal />,
     },
     {
       title: "Transparency & Trust",
       description:
         "From pricing to timelines, everything is clearly communicated. No shortcuts. No hidden charges.",
-      icon: <IconCurrencyDollar />,
+      icon: <DollarSign />,
     },
     {
       title: "Customer-Centric Service",
       description:
         "Your experience matters. We focus on collaboration, clarity, and support at every stage of the project—from design to installation and beyond.",
-      icon: <IconCloud />,
+      icon: <Cloud />,
     },
     {
       title: "Smart Use of Space",
       description: "Our designs maximize every corner for optimal functionality.",
-      icon: <IconRouteAltLeft />,
+      icon: <Route />,
     },
     {
       title: "Optimal Storage",
       description:
         "We integrate clever storage solutions to keep your kitchen organized.",
-      icon: <IconHelp />,
+      icon: <HelpCircle />,
     },
     {
       title: "Easy Maintenance",
       description:
         "Materials and finishes are chosen for their durability and ease of cleaning.",
-      icon: <IconAdjustmentsBolt />,
+      icon: <Maximize />,
     },
     {
       title: "Aesthetic Harmony",
       description: "We ensure your new kitchen complements your home's overall style.",
-      icon: <IconHeart />,
+      icon: <Heart />,
     },
   ];
   return (

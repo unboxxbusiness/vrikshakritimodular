@@ -2,15 +2,15 @@
 
 import { cn } from "@/lib/utils";
 import {
-  IconAdjustmentsBolt,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconHeart,
-  IconHelp,
-  IconRouteAltLeft,
-  IconTerminal2,
-} from "@tabler/icons-react";
+  Heart,
+  HelpCircle,
+  Route,
+  Cloud,
+  DollarSign,
+  Settings,
+  Terminal,
+  Maximize,
+} from "lucide-react";
 
 export function WhatWeDo() {
   const features = [
@@ -18,46 +18,46 @@ export function WhatWeDo() {
       title: "Personalized design consultation",
       description:
         "We start by understanding your needs, lifestyle, and aesthetic preferences.",
-      icon: <IconTerminal2 />,
+      icon: <Terminal />,
     },
     {
       title: "Space measurement & layout planning",
       description:
         "Our experts take precise measurements to ensure a perfect fit and optimal layout.",
-      icon: <IconEaseInOut />,
+      icon: <Settings />,
     },
     {
       title: "Custom 3D kitchen designs",
       description:
         "Visualize your dream kitchen with realistic 3D renders before we build it.",
-      icon: <IconCurrencyDollar />,
+      icon: <DollarSign />,
     },
     {
       title: "Material & finish selection",
       description: "We guide you through our curated selection of high-quality materials and finishes.",
-      icon: <IconCloud />,
+      icon: <Cloud />,
     },
     {
       title: "Factory manufacturing",
       description: "Your kitchen is built with precision in our state-of-the-art facility.",
-      icon: <IconRouteAltLeft />,
+      icon: <Route />,
     },
     {
       title: "Professional installation",
       description:
         "Our skilled team ensures a seamless and professional installation process.",
-      icon: <IconHelp />,
+      icon: <HelpCircle />,
     },
     {
       title: "After-sales support & warranty",
       description:
         "We stand by our work with comprehensive warranties and support.",
-      icon: <IconAdjustmentsBolt />,
+      icon: <Maximize />,
     },
     {
       title: "And everything else",
       description: "We handle all the details to bring your dream kitchen to life.",
-      icon: <IconHeart />,
+      icon: <Heart />,
     },
   ];
   return (
