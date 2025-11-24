@@ -49,7 +49,7 @@ export function KitchenStyles() {
         },
       ];
   return (
-    <div className="bg-background relative z-10 py-16 md:py-24">
+    <div id="kitchen-styles" className="bg-background relative z-10 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-6">
             <div className="text-center max-w-3xl mx-auto">
               <h2 className="text-3xl font-semibold text-center md:text-4xl">Modular Kitchen Styles We Specialize In</h2>

@@ -9,10 +9,10 @@ import { Logo } from './logo'
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 
 const menuItems = [
-    { name: 'Features', href: '#link' },
-    { name: 'Solution', href: '#link' },
-    { name: 'Pricing', href: '#link' },
+    { name: 'Kitchen Styles', href: '/#kitchen-styles' },
+    { name: 'Materials', href: '/materials-and-finishes' },
     { name: 'About', href: '/about' },
+    { name: 'Process', href: '/#design-process' },
 ]
 
 export const Header = () => {

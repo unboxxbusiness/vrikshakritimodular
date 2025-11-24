@@ -37,12 +37,6 @@
       "imageHint": "landscape architecture"
     },
     {
-      "id": "materials-1",
-      "description": "A close-up of various kitchen material samples, including wood grains, laminates, and stone textures.",
-      "imageUrl": "https://images.unsplash.com/photo-1760067538241-33a8694d9e23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxraXRjaGVuJTIwbWF0ZXJpYWxzfGVufDB8fHx8MTc2MzkwOTgzNXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "kitchen materials"
-    },
-    {
       "id": "kitchen-costing-1",
       "description": "A modern kitchen with a calculator and design plans on the counter, illustrating the concept of kitchen cost calculation.",
       "imageUrl": "https://images.unsplash.com/photo-1651107786750-fbefe0bdd0a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8a2l0Y2hlbiUyMGNvc3R8ZW58MHx8fHwxNzYzOTA5ODM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -215,6 +209,42 @@
       "description": "A close-up of new, stylish cabinet doors being installed on an existing kitchen frame.",
       "imageUrl": "https://images.unsplash.com/photo-1601175878411-a873c5b5978f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZXclMjBraXRjaGVuJTIwY2FiaW5ldHN8ZW58MHx8fHwxNzY0MjQ0MDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "new kitchen cabinets"
+    },
+    {
+      "id": "materials-hero-1",
+      "description": "A flat lay of various material samples including wood, marble, and fabric.",
+      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1080&auto=format&fit=crop",
+      "imageHint": "material samples"
+    },
+    {
+      "id": "carcass-materials-1",
+      "description": "The strong inner frame of a kitchen cabinet being assembled.",
+      "imageUrl": "https://images.unsplash.com/photo-1558905018-831c9449f8a3?q=80&w=1080&auto=format&fit=crop",
+      "imageHint": "cabinet construction"
+    },
+    {
+      "id": "shutter-materials-1",
+      "description": "A selection of colorful kitchen cabinet doors with different finishes.",
+      "imageUrl": "https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?q=80&w=1080&auto=format&fit=crop",
+      "imageHint": "cabinet doors"
+    },
+    {
+      "id": "countertops-1",
+      "description": "A beautiful and durable granite countertop in a modern kitchen.",
+      "imageUrl": "https://images.unsplash.com/photo-1600585153492-7a7dbe530e25?q=80&w=1080&auto=format&fit=crop",
+      "imageHint": "kitchen countertop"
+    },
+    {
+      "id": "hardware-1",
+      "description": "A close-up of high-quality hinges and handles on a kitchen cabinet.",
+      "imageUrl": "https://images.unsplash.com/photo-1583845112128-2cf1b1e9a1eb?q=80&w=1080&auto=format&fit=crop",
+      "imageHint": "kitchen hardware"
+    },
+    {
+      "id": "finish-options-1",
+      "description": "A palette of color swatches and textures for interior design.",
+      "imageUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=1080&auto=format&fit=crop",
+      "imageHint": "color palette"
     }
   ]
 }

@@ -47,7 +47,7 @@ export function MaterialsFinishes() {
                 </div>
                 <div className="mt-12 text-center">
                     <Button asChild variant="ghost">
-                        <Link href="#">
+                        <Link href="/materials-and-finishes">
                             Explore Materials & Finishes <ArrowRight className="size-4 ml-2" />
                         </Link>
                     </Button>

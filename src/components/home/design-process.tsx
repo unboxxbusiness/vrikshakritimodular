@@ -73,7 +73,7 @@ const ProcessStep = ({
 
 export function DesignProcess() {
   return (
-    <section className="py-12 md:py-20 bg-background">
+    <section id="design-process" className="py-12 md:py-20 bg-background">
       <div className="mx-auto max-w-7xl space-y-8 px-6 md:space-y-16">
         <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center">
           <h2 className="text-4xl font-semibold lg:text-5xl">Our Hassle-Free Process</h2>
