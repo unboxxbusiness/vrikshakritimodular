@@ -7,7 +7,6 @@ export function Logo() {
       alt="Vrikshakriti Logo"
       width={120}
       height={40}
-      className="h-10 w-auto"
     />
   );
 }
