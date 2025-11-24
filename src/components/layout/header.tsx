@@ -3,7 +3,8 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { Menu } from "lucide-react"
+import { Menu, X, ChevronDown } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -14,12 +15,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion"
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -82,6 +77,51 @@ const kitchenStyles: { title: string; href: string; description: string }[] = [
       description: "Upgrade your existing kitchen with minimal disruption.",
     },
 ]
+
+const CollapsibleSection = ({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  return (
+    <div className="w-full">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex w-full items-center justify-between rounded-md p-3 text-base font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground hover:no-underline -m-3"
+      >
+        <span>{title}</span>
+        <motion.div
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          <ChevronDown className="h-4 w-4" />
+        </motion.div>
+      </button>
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.div
+            key="content"
+            initial="collapsed"
+            animate="open"
+            exit="collapsed"
+            variants={{
+              open: { opacity: 1, height: "auto" },
+              collapsed: { opacity: 0, height: 0 },
+            }}
+            transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
+            className="overflow-hidden pl-6"
+          >
+            {children}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
 
 export function Header() {
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -173,25 +213,18 @@ export function Header() {
                         </Link>
                     </div>
                   <nav className="flex flex-col gap-y-4">
-                    <Accordion type="single" collapsible className="w-full">
-                      <AccordionItem value="kitchen-styles" className="border-b-0">
-                        <AccordionTrigger className="flex w-full items-center justify-between rounded-md p-3 text-base font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground hover:no-underline -m-3">
-                          Kitchen Styles
-                        </AccordionTrigger>
-                        <AccordionContent className="pl-6">
-                          {kitchenStyles.map((item) => (
-                            <Link
-                              key={item.title}
-                              href={item.href}
-                              className="block rounded-md p-3 text-base font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground"
-                              onClick={() => setMobileMenuOpen(false)}
-                            >
-                              {item.title}
-                            </Link>
-                          ))}
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
+                    <CollapsibleSection title="Kitchen Styles">
+                      {kitchenStyles.map((item) => (
+                        <Link
+                          key={item.title}
+                          href={item.href}
+                          className="block rounded-md p-3 text-base font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {item.title}
+                        </Link>
+                      ))}
+                    </CollapsibleSection>
                     
                     {menuItems.map((item) => (
                       <Link
