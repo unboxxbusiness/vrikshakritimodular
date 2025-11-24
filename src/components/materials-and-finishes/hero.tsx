@@ -10,7 +10,7 @@ export function Hero() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'materials-hero-1');
 
   return (
-    <section className="py-16 md:py-32 pt-16">
+    <section className="py-16 md:py-32 pt-24">
       <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12">
         {heroImage && (
           <Image

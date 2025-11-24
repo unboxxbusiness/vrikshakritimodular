@@ -7,7 +7,7 @@ export function Hero() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'semi-modular-hero-1');
 
   return (
-    <section className="py-16 md:py-32 bg-background pt-16">
+    <section className="py-16 md:py-32 bg-background pt-24">
       <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
         <div className="relative z-10 max-w-3xl space-y-6 text-center mx-auto">
           <h1 className="text-4xl font-semibold lg:text-5xl">Semi-Modular Kitchens & Renovations – Smart Upgrades, Minimal Hassle</h1>
