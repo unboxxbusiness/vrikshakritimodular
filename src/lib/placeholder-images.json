@@ -197,6 +197,24 @@
       "description": "A close-up of a kitchen island that incorporates a built-in cooktop.",
       "imageUrl": "https://images.unsplash.com/photo-1623998184288-3e4f3a789a7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwaXNsYW5kJTIwaG9ifGVufDB8fHx8MTc2NDI0MjAwMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "kitchen island hob"
+    },
+    {
+      "id": "semi-modular-hero-1",
+      "description": "A split-image showing a before-and-after of a kitchen renovation, with one side old and the other modern and semi-modular.",
+      "imageUrl": "https://images.unsplash.com/photo-1599691025028-0049755490c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwcmVub3ZhdGlvbnxlbnwwfHx8fDE3NjQyNDQwMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kitchen renovation"
+    },
+    {
+      "id": "semi-modular-best-for-1",
+      "description": "A person happily painting a wall in their apartment, representing a budget-friendly home improvement project.",
+      "imageUrl": "https://images.unsplash.com/photo-1552057718-52b88b394043?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidWRnZXQlMjByZW5vdmF0aW9ufGVufDB8fHx8MTc2NDI0NDAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "budget renovation"
+    },
+    {
+      "id": "semi-modular-options-1",
+      "description": "A close-up of new, stylish cabinet doors being installed on an existing kitchen frame.",
+      "imageUrl": "https://images.unsplash.com/photo-1601175878411-a873c5b5978f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZXclMjBraXRjaGVuJTIwY2FiaW5ldHN8ZW58MHx8fHwxNzY0MjQ0MDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "new kitchen cabinets"
     }
   ]
 }

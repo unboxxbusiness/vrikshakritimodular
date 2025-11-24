@@ -45,6 +45,7 @@ export function KitchenStyles() {
           description:
             "Upgrade your existing kitchen with minimal disruption.",
           icon: <RefreshCw className="size-8" />,
+          href: "/semi-modular-kitchen",
         },
       ];
   return (
