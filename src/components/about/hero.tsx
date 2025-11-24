@@ -18,7 +18,7 @@ export function Hero() {
                                 variant="outline"
                                 size="sm"
                                 asChild>
-                                <Link href="#design-process">Explore Our Process</Link>
+                                <Link href="/#design-process">Explore Our Process</Link>
                             </Button>
                         </div>
 
