@@ -1,4 +1,5 @@
 import type {Config} from 'tailwindcss';
+import { fontFamily } from 'tailwindcss/defaultTheme';
 
 export default {
   darkMode: ['class'],
@@ -10,9 +11,24 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Poppins', 'Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        body: ['var(--font-poppins)', 'var(--font-inter)', ...fontFamily.sans],
+        headline: ['var(--font-inter)', ...fontFamily.sans],
         code: ['monospace'],
+      },
+      fontSize: {
+        'xs': 'clamp(0.75rem, 0.17vw + 0.71rem, 0.84rem)',
+        'sm': 'clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem)',
+        'base': 'clamp(1rem, 0.34vw + 0.91rem, 1.19rem)',
+        'lg': 'clamp(1.13rem, 0.52vw + 1rem, 1.42rem)',
+        'xl': 'clamp(1.27rem, 0.71vw + 1.09rem, 1.69rem)',
+        '2xl': 'clamp(1.42rem, 0.94vw + 1.18rem, 2rem)',
+        '3xl': 'clamp(1.6rem, 1.22vw + 1.29rem, 2.38rem)',
+        '4xl': 'clamp(1.8rem, 1.55vw + 1.41rem, 2.83rem)',
+        '5xl': 'clamp(2.03rem, 1.95vw + 1.55rem, 3.38rem)',
+        '6xl': 'clamp(2.28rem, 2.42vw + 1.7rem, 4.02rem)',
+        '7xl': 'clamp(2.57rem, 2.99vw + 1.85rem, 4.79rem)',
+        '8xl': 'clamp(2.89rem, 3.69vw + 2.02rem, 5.7rem)',
+        '9xl': 'clamp(3.25rem, 4.54vw + 2.2rem, 6.78rem)',
       },
       colors: {
         background: 'hsl(var(--background))',
