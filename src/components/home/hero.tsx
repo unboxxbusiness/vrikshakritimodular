@@ -45,7 +45,7 @@ export function Hero() {
                         <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
                             <AnimatedGroup variants={transitionVariants}>
                                 <h1
-                                    className="mt-8 max-w-4xl mx-auto text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]">
+                                    className="mt-8 max-w-4xl mx-auto text-balance text-4xl md:text-6xl lg:mt-16 xl:text-7xl">
                                     Transform Your Home with a Smart, Stylish Modular Kitchen
                                 </h1>
                                 <p
