@@ -17,6 +17,7 @@ export function KitchenStyles() {
           description:
             "Maximum storage, best for families who love cooking together.",
           icon: <ParkingSquare className="size-8" />,
+          href: "/u-shaped-kitchen",
         },
         {
           title: "Straight Kitchen",

@@ -125,6 +125,24 @@
       "description": "An L-shaped kitchen featuring a breakfast counter with bar stools.",
       "imageUrl": "https://images.unsplash.com/photo-1594412267655-b44b8a2e3794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwYnJlYWtmYXN0JTIwY291bnRlcnxlbnwwfHx8fDE3NjQxMDMzMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "kitchen breakfast counter"
+    },
+    {
+      "id": "u-shaped-kitchen-hero-1",
+      "description": "A spacious and luxurious U-shaped kitchen with dark cabinets and marble countertops, showcasing efficiency and ample storage.",
+      "imageUrl": "https://images.unsplash.com/photo-1617092569274-0a9505a45218?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1LXNoYXBlZCUyMGtpdGNoZW58ZW58MHx8fHwxNzY0MTk3NzAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "u-shaped kitchen"
+    },
+    {
+      "id": "u-shaped-best-for-1",
+      "description": "A large, happy family gathered in a spacious kitchen, preparing a meal together.",
+      "imageUrl": "https://images.unsplash.com/photo-1577103233388-b2a47b1655e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYXJnZSUyMGZhbWlseSUyMGNvb2tpbmd8ZW58MHx8fHwxNzY0MTk3NzAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "large family cooking"
+    },
+    {
+      "id": "u-shaped-options-1",
+      "description": "A U-shaped kitchen with a large central island that includes a sink and seating area.",
+      "imageUrl": "https://images.unsplash.com/photo-1604578762244-49b7b4845070?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwaXNsYW5kJTIwc2VhdGluZ3xlbnwwfHx8fDE3NjQxOTc3MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kitchen island seating"
     }
   ]
 }
