@@ -85,7 +85,7 @@ export function Hero() {
                                     size="lg"
                                     variant="ghost"
                                     className="h-10.5 rounded-xl px-5">
-                                    <Link href="#link">
+                                    <Link href="#">
                                         <span className="text-nowrap">Download Kitchen Brochure</span>
                                     </Link>
                                 </Button>
