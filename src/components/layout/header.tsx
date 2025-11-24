@@ -102,51 +102,26 @@ export const Header = () => {
     }, []);
 
     React.useEffect(() => {
-        if (hasMounted) {
-            const handleScroll = () => {
-                setIsScrolled(window.scrollY > 50);
-            };
-            handleScroll(); // Check on mount
-            window.addEventListener('scroll', handleScroll, { passive: true });
-            return () => window.removeEventListener('scroll', handleScroll);
-        }
+        if (!hasMounted) return;
+        
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+        
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        handleScroll();
+
+        return () => window.removeEventListener('scroll', handleScroll);
     }, [hasMounted]);
 
     const handleLinkClick = () => {
         setIsMobileMenuOpen(false);
     };
 
-    if (!hasMounted) {
-        return (
-            <header>
-            <nav className="fixed z-20 w-full px-2">
-                <div className={'mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12'}>
-                    <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
-                        <div className="flex w-full justify-between lg:w-auto">
-                            <Link
-                                href="/"
-                                aria-label="home"
-                                className="flex items-center space-x-2">
-                                <Logo />
-                            </Link>
-                            <div className="lg:hidden">
-                                <Button variant="outline" size="icon">
-                                    <Menu className="h-6 w-6" />
-                                    <span className="sr-only">Open menu</span>
-                                </Button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        );
-    }
-
     return (
         <header>
             <nav className="fixed z-20 w-full px-2">
-                <div className={cn('mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12', isScrolled ? 'bg-background/50 max-w-4xl rounded-2xl border backdrop-blur-lg lg:px-5' : '')}>
+                <div className={cn('mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12', isScrolled && hasMounted ? 'bg-background/50 max-w-4xl rounded-2xl border backdrop-blur-lg lg:px-5' : '')}>
                     <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
                         <div className="flex w-full justify-between lg:w-auto">
                             <Link
@@ -219,7 +194,7 @@ export const Header = () => {
                                     </NavigationMenuItem>
                                     {menuItems.map((item) => (
                                         <NavigationMenuItem key={item.name}>
-                                            <Link href={item.href} legacyBehavior passHref>
+                                            <Link href={item.href} legacyBehavior={false} passHref>
                                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                                     {item.name}
                                                 </NavigationMenuLink>
