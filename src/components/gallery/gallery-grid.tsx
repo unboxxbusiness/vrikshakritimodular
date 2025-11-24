@@ -1,7 +1,8 @@
 "use client";
 
 import Image from 'next/image';
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { DialogDescription } from '../ui/dialog';
 
 const portfolioImages = [
     {
@@ -171,6 +172,10 @@ export function GalleryGrid() {
                 </div>
               </DialogTrigger>
               <DialogContent className="max-w-4xl p-0">
+                <DialogTitle className="sr-only">{image.alt}</DialogTitle>
+                <DialogDescription className="sr-only">
+                    Enlarged view of {image.alt}
+                </DialogDescription>
                 <Image
                   src={image.src}
                   alt={image.alt}
