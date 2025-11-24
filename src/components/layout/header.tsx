@@ -20,7 +20,6 @@ import {
 const menuItems = [
     { name: 'Materials', href: '/materials-and-finishes' },
     { name: 'About', href: '/about' },
-    { name: 'FAQ', href: '/faq' },
 ]
 
 const kitchenStyles = [
@@ -220,7 +219,7 @@ export const Header = () => {
                                     </NavigationMenuItem>
                                     {menuItems.map((item) => (
                                         <NavigationMenuItem key={item.name}>
-                                            <Link href={item.href} passHref>
+                                            <Link href={item.href} legacyBehavior passHref>
                                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                                     {item.name}
                                                 </NavigationMenuLink>
