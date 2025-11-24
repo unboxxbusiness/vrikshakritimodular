@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import {
   Sheet,
   SheetContent,
+  SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
@@ -68,19 +69,19 @@ const kitchenStyles: { title: string; href: string; description: string }[] = [
 ]
 
 export function Header() {
-  const [isScrolled, setIsScrolled] = React.useState(false)
-  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
+  const [isScrolled, setIsScrolled] = React.useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
   React.useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
-    window.addEventListener("scroll", handleScroll)
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
     handleScroll();
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header
@@ -119,8 +120,8 @@ export function Header() {
                 </NavigationMenuItem>
                 {menuItems.map((item) => (
                     <NavigationMenuItem key={item.name}>
-                        <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                            <Link href={item.href}>
+                        <NavigationMenuLink asChild>
+                            <Link href={item.href} className={navigationMenuTriggerStyle()}>
                                 {item.name}
                             </Link>
                         </NavigationMenuLink>
@@ -146,7 +147,9 @@ export function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="left">
-                <SheetTitle className="sr-only">Main Menu</SheetTitle>
+                <SheetHeader className="sr-only">
+                    <SheetTitle>Main Menu</SheetTitle>
+                </SheetHeader>
                 <div className="flex h-full flex-col py-6">
                     <div className="mb-8">
                         <Link href="/" className="flex items-center gap-2 font-bold text-lg" onClick={() => setMobileMenuOpen(false)}>
@@ -200,7 +203,7 @@ const ListItem = React.forwardRef<
   return (
     <li>
       <NavigationMenuLink asChild>
-        <Link
+        <a
           ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
@@ -212,7 +215,7 @@ const ListItem = React.forwardRef<
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
-        </Link>
+        </a>
       </NavigationMenuLink>
     </li>
   )
