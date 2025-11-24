@@ -1,6 +1,6 @@
 "use client";
 
-import { LayoutTemplate, Palette, DollarSign, Cube, Archive, CalendarClock } from "lucide-react";
+import { LayoutTemplate, Palette, DollarSign, Box, Archive, CalendarClock } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const features = [
@@ -22,7 +22,7 @@ const features = [
     { 
         title: "3D design preview guidance",
         description: "Visualize your future kitchen with our 3D rendering process.",
-        icon: <Cube />
+        icon: <Box />
     },
     { 
         title: "Accessory & storage planning",
