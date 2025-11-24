@@ -6,6 +6,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/header';
 import { Inter } from 'next/font/google';
 import { cn } from '@/lib/utils';
+import { ScrollToTopButton } from '@/components/layout/scroll-to-top-button';
 
 const fontSans = Inter({
   subsets: ['latin'],
@@ -58,6 +59,7 @@ export default function RootLayout({
           <Footer />
         </div>
         <Toaster />
+        <ScrollToTopButton />
       </body>
     </html>
   );
