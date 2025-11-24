@@ -71,14 +71,9 @@ export const Header = () => {
                                                 </Link>
                                             ))}
                                             <div className="flex w-full flex-col space-y-3 pt-6">
-                                                <Button asChild variant="outline">
-                                                    <Link href="#" onClick={handleLinkClick}>
-                                                        <span>Login</span>
-                                                    </Link>
-                                                </Button>
                                                 <Button asChild>
                                                     <Link href="#" onClick={handleLinkClick}>
-                                                        <span>Sign Up</span>
+                                                        <span>Book a Free Design Consultation</span>
                                                     </Link>
                                                 </Button>
                                             </div>
@@ -105,27 +100,10 @@ export const Header = () => {
                         <div className="hidden lg:flex lg:w-auto lg:gap-3">
                             <Button
                                 asChild
-                                variant="outline"
                                 size="sm"
-                                className={cn(isScrolled && 'lg:hidden')}>
+                                >
                                 <Link href="#">
-                                    <span>Login</span>
-                                </Link>
-                            </Button>
-                            <Button
-                                asChild
-                                size="sm"
-                                className={cn(isScrolled && 'lg:hidden')}>
-                                <Link href="#">
-                                    <span>Sign Up</span>
-                                </Link>
-                            </Button>
-                            <Button
-                                asChild
-                                size="sm"
-                                className={cn(isScrolled ? 'lg:inline-flex' : 'hidden')}>
-                                <Link href="#">
-                                    <span>Get Started</span>
+                                    <span>Book a Free Design Consultation</span>
                                 </Link>
                             </Button>
                         </div>
