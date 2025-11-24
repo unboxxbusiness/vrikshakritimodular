@@ -41,9 +41,9 @@ export function Hero() {
         <section className="py-16 md:py-24 bg-background">
              <div className="size-[520px] -top-80 left-1/2 -translate-x-1/2 rounded-full absolute blur-[300px] -z-10 bg-primary/5"></div>
             <div className="container mx-auto px-6">
-                <h2 className="text-3xl font-semibold text-center mx-auto md:text-4xl">About Vrikshakriti</h2>
-                <p className="text-sm text-muted-foreground text-center mt-2 max-w-lg mx-auto">
-                    Crafting kitchens that feel like home, with a focus on quality, transparency, and thoughtful design.
+                <h1 className="text-3xl font-semibold text-center mx-auto md:text-4xl">Crafting Kitchens That Feel Like Home</h1>
+                <p className="text-sm text-muted-foreground text-center mt-4 max-w-2xl mx-auto">
+                    At Vrikshakriti, we believe your kitchen is more than a workspace—it's the heart of your home. Our mission is to design and build modular kitchens that bring beauty, convenience, and durability together. With a focus on thoughtful design and precision manufacturing, we help homeowners create kitchens that truly reflect their lifestyle and personality.
                 </p>
                 <div className="relative max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16 pt-16">
                     {features.map(feature => (
