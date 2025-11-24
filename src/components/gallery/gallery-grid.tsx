@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle, DialogDescription, DialogTrigger } from '@/components/ui/dialog';
 import { cn } from '@/lib/utils';
 import { useInView } from 'framer-motion';
 
