@@ -1,3 +1,4 @@
+
 "use client"
 
 import * as React from "react"
@@ -13,6 +14,12 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion"
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -33,6 +40,14 @@ const menuItems = [
         name: "Gallery",
         href: "/gallery",
     },
+    {
+        name: "FAQ",
+        href: "/faq",
+    },
+    {
+        name: "About",
+        href: "/about",
+    }
 ]
 
 const kitchenStyles: { title: string; href: string; description: string }[] = [
@@ -158,18 +173,26 @@ export function Header() {
                         </Link>
                     </div>
                   <nav className="flex flex-col gap-y-4">
-                    <h3 className="font-semibold">Kitchen Styles</h3>
-                    {kitchenStyles.map((item) => (
-                      <Link
-                        key={item.title}
-                        href={item.href}
-                        className="-m-3 block rounded-md p-3 text-base font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        {item.title}
-                      </Link>
-                    ))}
-                     <hr className="my-4"/>
+                    <Accordion type="single" collapsible className="w-full">
+                      <AccordionItem value="kitchen-styles" className="border-b-0">
+                        <AccordionTrigger className="flex w-full items-center justify-between rounded-md p-3 text-base font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground hover:no-underline -m-3">
+                          Kitchen Styles
+                        </AccordionTrigger>
+                        <AccordionContent className="pl-6">
+                          {kitchenStyles.map((item) => (
+                            <Link
+                              key={item.title}
+                              href={item.href}
+                              className="block rounded-md p-3 text-base font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+                              onClick={() => setMobileMenuOpen(false)}
+                            >
+                              {item.title}
+                            </Link>
+                          ))}
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
+                    
                     {menuItems.map((item) => (
                       <Link
                         key={item.name}
@@ -221,3 +244,5 @@ const ListItem = React.forwardRef<
   )
 })
 ListItem.displayName = "ListItem"
+
+    
