@@ -84,7 +84,7 @@ export function Hero() {
                                     asChild
                                     size="lg"
                                     variant="ghost"
-                                    className="h-10.5 rounded-xl px-5">
+                                    className="h-11 rounded-xl px-5 text-base">
                                     <Link href="#">
                                         <span className="text-nowrap">Download Kitchen Brochure</span>
                                     </Link>
