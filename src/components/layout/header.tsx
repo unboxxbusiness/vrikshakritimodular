@@ -161,7 +161,7 @@ export function Header() {
                   <span className="sr-only">Open main menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left">
+              <SheetContent side="right">
                 <SheetHeader className="sr-only">
                     <SheetTitle>Main Menu</SheetTitle>
                 </SheetHeader>
