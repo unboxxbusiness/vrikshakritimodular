@@ -25,13 +25,6 @@ export function DesignOptions() {
                 <Feature key={option.text} title={option.text} description={option.description} icon={option.icon} index={index} />
             ))}
         </div>
-        <div className="mt-12 text-center">
-            <Button asChild>
-                <Link href="#">
-                    Explore L-Shaped Kitchen Designs <ArrowRight className="size-4 ml-2" />
-                </Link>
-            </Button>
-        </div>
       </div>
     </section>
   );
