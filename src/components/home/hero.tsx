@@ -135,7 +135,7 @@ export function Hero() {
                             <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                                 <Image
                                     className="bg-background aspect-video relative rounded-2xl"
-                                    src="https://images.unsplash.com/photo-1600585152220-0f7a730345d1?q=80&w=2940&auto=format&fit=crop"
+                                    src="https://res.cloudinary.com/dhrigocvd/image/upload/v1763958686/Gemini_Generated_Image_wkk0fiwkk0fiwkk0_zgz3un.png"
                                     alt="Modern modular kitchen"
                                     width={2940}
                                     height={1654}
