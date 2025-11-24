@@ -101,6 +101,12 @@
       "description": "A mood board for a kitchen design, showing a color palette, material samples, and sketches.",
       "imageUrl": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXNpZ24lMjBwaGlsb3NvcGh5fGVufDB8fHx8MTc2Mzk5OTU0OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "design philosophy"
+    },
+    {
+      "id": "our-promise-1",
+      "description": "A beautifully finished modern kitchen with a focus on quality craftsmanship and detail.",
+      "imageUrl": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxxdWFsaXR5JTIwY3JhZnRzbWFuc2hpcHxlbnwwfHx8fDE3NjQwMDYwODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "quality craftsmanship"
     }
   ]
 }

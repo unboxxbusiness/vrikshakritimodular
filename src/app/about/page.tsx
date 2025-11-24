@@ -1,5 +1,6 @@
 import { Hero } from '@/components/about/hero';
 import { OurApproach } from '@/components/about/our-approach';
+import { OurPromise } from '@/components/about/our-promise';
 import { OurValues } from '@/components/about/our-values';
 import { WhatWeDo } from '@/components/about/what-we-do';
 
@@ -10,6 +11,7 @@ export default function AboutPage() {
       <OurValues />
       <WhatWeDo />
       <OurApproach />
+      <OurPromise />
     </>
   );
 }
