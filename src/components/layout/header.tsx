@@ -206,7 +206,7 @@ export function Header() {
                   </nav>
                   <div className="mt-auto">
                     <Button asChild className="w-full">
-                        <Link href="/book-a-free-consultation">Book a Free Design Consultation</Link>
+                        <Link href="/book-a-free-consultation" onClick={() => setMobileMenuOpen(false)}>Book a Free Design Consultation</Link>
                     </Button>
                   </div>
                 </div>
