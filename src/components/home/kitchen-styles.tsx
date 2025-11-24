@@ -1,5 +1,7 @@
+
 import { cn } from "@/lib/utils";
 import { RefreshCw, Rows, Columns, ParkingSquare, BoxSelect } from "lucide-react";
+import Link from "next/link";
 
 export function KitchenStyles() {
     const features = [
@@ -8,6 +10,7 @@ export function KitchenStyles() {
           description:
             "Space-efficient, modern, and perfect for small to mid-sized homes.",
           icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-l-shape"><path d="M5 5v14h14"/></svg>,
+          href: "/l-shaped-kitchen",
         },
         {
           title: "U-Shaped Kitchen",
@@ -62,16 +65,18 @@ const Feature = ({
   description,
   icon,
   index,
+  href
 }: {
   title: string;
   description: string;
   icon: React.ReactNode;
   index: number;
+  href?: string;
 }) => {
-  return (
+  const content = (
     <div
       className={cn(
-        "flex flex-col lg:border-r py-10 relative group/feature dark:border-neutral-800",
+        "flex flex-col lg:border-r py-10 relative group/feature dark:border-neutral-800 h-full",
         (index === 0 || index === 3) && "lg:border-l dark:border-neutral-800",
         index < 3 && "lg:border-b dark:border-neutral-800"
       )}
@@ -91,4 +96,10 @@ const Feature = ({
       </p>
     </div>
   );
+
+  if (href) {
+    return <Link href={href} className="flex flex-col h-full">{content}</Link>;
+  }
+
+  return content;
 };
