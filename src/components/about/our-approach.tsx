@@ -1,3 +1,4 @@
+
 "use client";
 
 import { cn } from "@/lib/utils";
@@ -65,7 +66,7 @@ export function OurApproach() {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-semibold text-center md:text-4xl">Our Approach</h2>
+            <h2 className="text-center">Our Approach</h2>
             <p className="text-muted-foreground mt-4">We follow a systematic, customer-friendly process to ensure that your kitchen project is smooth, transparent, and stress-free. From idea to installation, our team handles every detail with precision. Our design philosophy revolves around:</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">

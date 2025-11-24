@@ -4,19 +4,12 @@ import './globals.css';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/header';
-import { Poppins, Inter } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import { cn } from '@/lib/utils';
 
-const fontPoppins = Poppins({
+const fontSans = Inter({
   subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  variable: '--font-poppins',
-});
-
-const fontInter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  variable: '--font-inter',
+  variable: '--font-sans',
 });
 
 export const metadata: Metadata = {
@@ -57,8 +50,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("scroll-smooth", fontPoppins.variable, fontInter.variable)}>
-      <body className="font-body antialiased">
+    <html lang="en" className={cn("scroll-smooth", fontSans.variable)}>
+      <body className="font-sans antialiased">
         <div className="flex min-h-screen flex-col">
           <Header />
           <main className="flex-grow">{children}</main>

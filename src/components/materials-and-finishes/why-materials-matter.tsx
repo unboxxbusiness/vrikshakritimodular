@@ -1,3 +1,4 @@
+
 "use client";
 
 import { ShieldCheck, Waves, Thermometer, HardHat, Wrench, Gem } from "lucide-react";
@@ -35,7 +36,7 @@ export function WhyMaterialsMatter() {
     <section className="py-16 md:py-24 bg-muted/50">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl font-semibold md:text-4xl">Built for Indian Homes. Designed for Daily Life.</h2>
+          <h2>Built for Indian Homes. Designed for Daily Life.</h2>
           <p className="mt-4 text-muted-foreground">Each material and finish at Vrikshakriti is handpicked to offer:</p>
         </div>
 

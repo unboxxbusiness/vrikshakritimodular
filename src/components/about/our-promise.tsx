@@ -1,3 +1,4 @@
+
 "use client";
 
 import { cn } from "@/lib/utils";
@@ -44,7 +45,7 @@ export function OurPromise() {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-semibold text-center md:text-4xl">What You Can Expect from Us</h2>
+            <h2 className="text-center">What You Can Expect from Us</h2>
             <p className="text-muted-foreground mt-4">Our promise is simple: to deliver a kitchen that you will love for years to come. We stand behind our work with a commitment to excellence at every step.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  relative z-10 py-10 max-w-7xl mx-auto">

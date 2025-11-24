@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Wrench, Component, Box, CornerUpLeft, Utensils, GlassWater, Trash2, CheckCircle } from "lucide-react";
@@ -52,7 +53,7 @@ export function HardwareAccessories() {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl font-semibold md:text-4xl">Smooth Performance with Premium Hardware</h2>
+          <h2>Smooth Performance with Premium Hardware</h2>
           <p className="mt-4 text-muted-foreground">We work with globally trusted brands known for quality, durability, and effortless function. Every component is engineered for long-term reliability.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 max-w-7xl mx-auto">

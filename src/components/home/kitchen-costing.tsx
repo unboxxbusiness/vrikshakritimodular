@@ -1,3 +1,4 @@
+
 import { AreaChart, BadgePercent, Combine, AlertCircle, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -32,7 +33,7 @@ export function KitchenCosting() {
                 <div className="grid items-center gap-12 md:grid-cols-2 md:gap-12 lg:grid-cols-5 lg:gap-24">
                     <div className="lg:col-span-2">
                         <div className="md:pr-6 lg:pr-0">
-                            <h2 className="text-4xl font-semibold lg:text-5xl">How Much Will Your Modular Kitchen Cost?</h2>
+                            <h2 className="lg:text-5xl">How Much Will Your Modular Kitchen Cost?</h2>
                             <p className="mt-6 text-muted-foreground">Your kitchen budget depends on layout, material, finish, and accessories. To help you plan:</p>
                         </div>
                         <ul className="mt-8 divide-y border-y *:flex *:items-center *:gap-3 *:py-3">

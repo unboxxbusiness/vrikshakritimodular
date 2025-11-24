@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Palette, Layers, Sparkles, Box, Contrast, Bot, Leaf, Building } from "lucide-react";
@@ -66,12 +67,12 @@ export function FinishOptions() {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl font-semibold md:text-4xl">Find the Style That Matches Your Personality</h2>
+            <h2>Find the Style That Matches Your Personality</h2>
             <p className="mt-4 text-muted-foreground">We offer a wide range of finishes that suit every home aesthetic. Explore our popular textures and color themes to find the perfect match for your kitchen.</p>
         </div>
         
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-center mb-10">Surface Textures</h3>
+          <h3 className="text-center mb-10">Surface Textures</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 max-w-7xl mx-auto">
               {textures.map((feature, index) => (
                   <Feature key={feature.title} {...feature} index={index} total={textures.length}/>
@@ -80,7 +81,7 @@ export function FinishOptions() {
         </div>
 
         <div>
-          <h3 className="text-2xl font-semibold text-center mb-10">Popular Color Themes</h3>
+          <h3 className="text-center mb-10">Popular Color Themes</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 max-w-7xl mx-auto">
               {themes.map((feature, index) => (
                   <Feature key={feature.title} {...feature} index={index} total={themes.length}/>

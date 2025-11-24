@@ -1,3 +1,4 @@
+
 import { Layers, PanelTop, Wrench, LayoutGrid, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
@@ -32,7 +33,7 @@ export function MaterialsFinishes() {
         <section className="py-16 md:py-24 bg-background">
             <div className="mx-auto max-w-7xl px-6">
                 <div className="text-center">
-                    <h2 className="text-balance text-3xl font-semibold md:text-4xl">Premium Materials. Superior Finishes. Thoughtful Hardware.</h2>
+                    <h2>Premium Materials. Superior Finishes. Thoughtful Hardware.</h2>
                     <p className="text-muted-foreground mt-6">Choose from a curated range of durable materials and stylish finishes designed for long-term performance.</p>
                 </div>
 

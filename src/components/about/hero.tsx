@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from '@/components/ui/button';
@@ -12,7 +13,7 @@ export function Hero() {
                 <div className="mx-auto flex flex-col px-6 md:grid md:max-w-5xl md:grid-cols-2 md:gap-12">
                     <div className="order-last mt-6 flex flex-col gap-12 md:order-first">
                         <div className="space-y-6">
-                            <h1 className="text-balance text-3xl font-semibold md:text-4xl lg:text-5xl">Crafting Kitchens That Feel Like Home</h1>
+                            <h1>Crafting Kitchens That Feel Like Home</h1>
                             <p className="text-muted-foreground">At Vrikshakriti, we believe your kitchen is more than a workspace—it's the heart of your home. Our mission is to design and build modular kitchens that bring beauty, convenience, and durability together. With a focus on thoughtful design and precision manufacturing, we help homeowners create kitchens that truly reflect their lifestyle and personality.</p>
                             <Button
                                 variant="outline"

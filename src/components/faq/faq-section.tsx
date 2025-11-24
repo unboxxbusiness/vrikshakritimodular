@@ -1,3 +1,4 @@
+
 "use client";
 
 import {
@@ -144,8 +145,8 @@ export function FaqSection() {
       <div className="container mx-auto px-6 max-w-3xl">
         {faqSections.map((section, index) => (
           <div key={index} className="mb-12">
-            <h2 className="text-2xl font-semibold mb-6">{section.title}</h2>
-            <Accordion type="single" collapsible className="w-full">
+            <h2>{section.title}</h2>
+            <Accordion type="single" collapsible className="w-full mt-6">
               {section.items.map((item, itemIndex) => (
                 <AccordionItem key={itemIndex} value={`item-${index}-${itemIndex}`}>
                   <AccordionTrigger className="text-left">{item.question}</AccordionTrigger>

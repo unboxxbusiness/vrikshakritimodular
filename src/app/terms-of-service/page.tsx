@@ -18,7 +18,7 @@ export default function TermsOfServicePage() {
     <div className="bg-background pt-16">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="mx-auto max-w-4xl">
-          <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-center mb-4">
+          <h1 className="text-center mb-4">
             TERMS OF USE – VRIKSHAKRITI MODULAR KITCHENS
           </h1>
           {lastUpdatedDate && (
@@ -39,7 +39,7 @@ export default function TermsOfServicePage() {
               or services.
             </p>
 
-            <h2 className="text-2xl font-semibold tracking-tight text-foreground pt-6 border-t">1. Acceptance of Terms</h2>
+            <h2 className="pt-6 border-t">1. Acceptance of Terms</h2>
             <p>
               By accessing this website, you agree to comply with these Terms of
               Use, our Privacy Policy, and any other guidelines posted on the
@@ -47,7 +47,7 @@ export default function TermsOfServicePage() {
               website.
             </p>
 
-            <h2 className="text-2xl font-semibold tracking-tight text-foreground pt-6 border-t">2. Use of Website</h2>
+            <h2 className="pt-6 border-t">2. Use of Website</h2>
             <p>You agree to use our website for lawful purposes only. You must not:</p>
             <ul className="list-disc space-y-2 pl-6">
               <li>Attempt to gain unauthorized access to any part of the website</li>
@@ -56,7 +56,7 @@ export default function TermsOfServicePage() {
               <li>Interfere with the functioning or security of the website</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold tracking-tight text-foreground pt-6 border-t">3. Product & Service Information</h2>
+            <h2 className="pt-6 border-t">3. Product & Service Information</h2>
             <p>Vrikshakriti Modular Kitchens provides:</p>
             <ul className="list-disc space-y-2 pl-6">
               <li>Modular kitchen design services</li>
@@ -73,7 +73,7 @@ export default function TermsOfServicePage() {
               service offerings without prior notice.
             </p>
 
-            <h2 className="text-2xl font-semibold tracking-tight text-foreground pt-6 border-t">4. Pricing & Estimates</h2>
+            <h2 className="pt-6 border-t">4. Pricing & Estimates</h2>
             <p>Any pricing shown on the website is:</p>
             <ul className="list-disc space-y-2 pl-6">
               <li>Indicative and subject to change</li>
@@ -88,7 +88,7 @@ export default function TermsOfServicePage() {
               and project analysis.
             </p>
 
-            <h2 className="text-2xl font-semibold tracking-tight text-foreground pt-6 border-t">5. Intellectual Property</h2>
+            <h2 className="pt-6 border-t">5. Intellectual Property</h2>
             <p>
               All content on this website—including text, images, graphics,
               designs, logos, videos, and layouts—is the intellectual property of
@@ -105,14 +105,14 @@ export default function TermsOfServicePage() {
             </ul>
             <p>any material from this website without explicit written permission.</p>
 
-            <h2 className="text-2xl font-semibold tracking-tight text-foreground pt-6 border-t">6. Third-Party Links</h2>
+            <h2 className="pt-6 border-t">6. Third-Party Links</h2>
             <p>
               Our website may contain links to third-party websites. Vrikshakriti
               is not responsible for the content, accuracy, or policies of
               third-party websites. Visiting these links is at your own risk.
             </p>
 
-            <h2 className="text-2xl font-semibold tracking-tight text-foreground pt-6 border-t">7. User Submissions</h2>
+            <h2 className="pt-6 border-t">7. User Submissions</h2>
             <p>
               When you submit information through forms, WhatsApp, or email, you
               agree that:
@@ -124,7 +124,7 @@ export default function TermsOfServicePage() {
             </ul>
             <p>We do not sell your personal information to any external party.</p>
 
-            <h2 className="text-2xl font-semibold tracking-tight text-foreground pt-6 border-t">8. Appointments & Consultations</h2>
+            <h2 className="pt-6 border-t">8. Appointments & Consultations</h2>
             <p>Booking a consultation does not guarantee:</p>
             <ul className="list-disc space-y-2 pl-6">
               <li>Final price</li>
@@ -136,7 +136,7 @@ export default function TermsOfServicePage() {
               advance payment.
             </p>
 
-            <h2 className="text-2xl font-semibold tracking-tight text-foreground pt-6 border-t">9. Limitations of Liability</h2>
+            <h2 className="pt-6 border-t">9. Limitations of Liability</h2>
             <p>Vrikshakriti is not liable for:</p>
             <ul className="list-disc space-y-2 pl-6">
               <li>Temporary website unavailability</li>
@@ -151,7 +151,7 @@ export default function TermsOfServicePage() {
               before execution.
             </p>
 
-            <h2 className="text-2xl font-semibold tracking-tight text-foreground pt-6 border-t">10. Project Timelines</h2>
+            <h2 className="pt-6 border-t">10. Project Timelines</h2>
             <p>
               Estimated timelines for manufacturing or installation may vary due to:
             </p>
@@ -163,7 +163,7 @@ export default function TermsOfServicePage() {
             </ul>
             <p>We are not liable for delays caused by such circumstances.</p>
 
-            <h2 className="text-2xl font-semibold tracking-tight text-foreground pt-6 border-t">11. Indemnification</h2>
+            <h2 className="pt-6 border-t">11. Indemnification</h2>
             <p>
               By using our website and services, you agree to indemnify and hold
               Vrikshakriti, its directors, employees, and partners harmless from
@@ -175,19 +175,19 @@ export default function TermsOfServicePage() {
               <li>Use of our content without permission</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold tracking-tight text-foreground pt-6 border-t">12. Modifications to Terms</h2>
+            <h2 className="pt-6 border-t">12. Modifications to Terms</h2>
             <p>
               We may update or revise these Terms of Use at any time. Continued
               use of our website means you accept the updated Terms.
             </p>
 
-            <h2 className="text-2xl font-semibold tracking-tight text-foreground pt-6 border-t">13. Governing Law</h2>
+            <h2 className="pt-6 border-t">13. Governing Law</h2>
             <p>
               These Terms are governed by the laws of India, with jurisdiction in
               Delhi NCR.
             </p>
 
-            <h2 className="text-2xl font-semibold tracking-tight text-foreground pt-6 border-t">14. Contact Us</h2>
+            <h2 className="pt-6 border-t">14. Contact Us</h2>
             <p>
               If you have questions about these Terms of Use, please contact:
             </p>

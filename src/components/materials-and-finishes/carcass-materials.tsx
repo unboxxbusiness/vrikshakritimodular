@@ -1,3 +1,4 @@
+
 "use client";
 
 import { CheckCircle, ShieldCheck, HardHat, Package } from "lucide-react";
@@ -32,7 +33,7 @@ export function CarcassMaterials() {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl font-semibold md:text-4xl">Strong Foundations for Long-Lasting Kitchens</h2>
+          <h2>Strong Foundations for Long-Lasting Kitchens</h2>
           <p className="mt-4 text-muted-foreground">The carcass (the internal body of your kitchen) needs to be sturdy, moisture-resistant, and termite-proof. We use only trusted, high-grade options designed for Indian cooking conditions.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 max-w-7xl mx-auto">

@@ -1,3 +1,4 @@
+
 import type {Config} from 'tailwindcss';
 import { fontFamily } from 'tailwindcss/defaultTheme';
 
@@ -11,9 +12,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['var(--font-poppins)', 'var(--font-inter)', ...fontFamily.sans],
-        headline: ['var(--font-inter)', ...fontFamily.sans],
-        code: ['monospace'],
+        sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       fontSize: {
         'xs': 'clamp(0.75rem, 0.17vw + 0.71rem, 0.84rem)',
@@ -26,9 +25,6 @@ export default {
         '4xl': 'clamp(1.8rem, 1.55vw + 1.41rem, 2.83rem)',
         '5xl': 'clamp(2.03rem, 1.95vw + 1.55rem, 3.38rem)',
         '6xl': 'clamp(2.28rem, 2.42vw + 1.7rem, 4.02rem)',
-        '7xl': 'clamp(2.57rem, 2.99vw + 1.85rem, 4.79rem)',
-        '8xl': 'clamp(2.89rem, 3.69vw + 2.02rem, 5.7rem)',
-        '9xl': 'clamp(3.25rem, 4.54vw + 2.2rem, 6.78rem)',
       },
       colors: {
         background: 'hsl(var(--background))',

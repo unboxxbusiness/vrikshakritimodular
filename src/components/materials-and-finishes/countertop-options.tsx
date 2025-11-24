@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Gem, Shield, Square } from "lucide-react";
@@ -14,7 +15,7 @@ export function CountertopOptions() {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-semibold md:text-4xl">Countertop Options</h2>
+            <h2>Countertop Options</h2>
             <p className="mt-4 text-muted-foreground">
               The right countertop brings your kitchen together. We offer a range of popular choices to suit your needs.
             </p>

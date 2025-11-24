@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Paintbrush, Layers, Shield, Sparkles, Gem } from "lucide-react";
@@ -36,7 +37,7 @@ export function ShutterMaterials() {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl font-semibold md:text-4xl">Choose the Look You Love with Long-Lasting Shutter Options</h2>
+          <h2>Choose the Look You Love with Long-Lasting Shutter Options</h2>
           <p className="mt-4 text-muted-foreground">Shutters decide the style, shine, and texture of your modular kitchen. We offer a wide range of finishes that balance beauty with durability.</p>
         </div>
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative z-10 max-w-7xl mx-auto">

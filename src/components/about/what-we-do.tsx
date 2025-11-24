@@ -1,3 +1,4 @@
+
 "use client";
 
 import { cn } from "@/lib/utils";
@@ -64,7 +65,7 @@ export function WhatWeDo() {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-semibold md:text-4xl">End-to-End Modular Kitchen Solutions</h2>
+            <h2>End-to-End Modular Kitchen Solutions</h2>
             <p className="mt-4 text-muted-foreground">
               We specialize exclusively in modular kitchens—allowing us to perfect our craft and stay dedicated to the space that matters most. Our services are designed to offer a complete, hassle-free experience:
             </p>

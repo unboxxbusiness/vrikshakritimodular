@@ -1,3 +1,4 @@
+
 "use client"
 
 import * as React from "react"
@@ -49,7 +50,7 @@ export function PortfolioGallery() {
     return (
         <section className="w-full flex flex-col items-center justify-start py-16 md:py-24 bg-background">
             <div className="max-w-3xl text-center px-4">
-                <h2 className="text-3xl font-semibold sm:text-4xl">Kitchens We’ve Designed & Delivered</h2>
+                <h2>Kitchens We’ve Designed & Delivered</h2>
                 <p className="text-muted-foreground mt-2">
                     Browse a collection of real modular kitchens and 3D concepts crafted by our design team.
                 </p>

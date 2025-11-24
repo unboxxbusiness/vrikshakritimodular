@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Eye, Palette, Sparkles, Star } from 'lucide-react';
@@ -8,7 +9,7 @@ export function Hero() {
     <section className="overflow-hidden py-16 md:py-32 bg-background pt-24">
       <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12">
         <div className="relative z-10 max-w-3xl text-center mx-auto">
-          <h1 className="text-4xl font-semibold lg:text-5xl">A Collection of Kitchens Designed to Inspire</h1>
+          <h1>A Collection of Kitchens Designed to Inspire</h1>
           <p className="mt-6 text-lg text-muted-foreground">
             Welcome to the Vrikshakriti Gallery—where thoughtful design meets timeless craftsmanship. Every kitchen you see here is a reflection of our passion for detail, our commitment to quality, and our belief that the heart of every home deserves to be beautiful, functional, and truly personal.
           </p>

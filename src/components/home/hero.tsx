@@ -1,3 +1,4 @@
+
 "use client"
 
 import React from 'react'
@@ -45,11 +46,11 @@ export function Hero() {
                         <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
                             <AnimatedGroup variants={transitionVariants}>
                                 <h1
-                                    className="mt-8 max-w-4xl mx-auto text-balance text-4xl md:text-6xl lg:mt-16 xl:text-7xl">
+                                    className="mt-8 max-w-4xl mx-auto">
                                     Transform Your Home with a Smart, Stylish Modular Kitchen
                                 </h1>
                                 <p
-                                    className="mx-auto mt-8 max-w-2xl text-balance text-lg">
+                                    className="mx-auto mt-8 max-w-2xl text-lg">
                                     Crafted for Indian homes. Designed for everyday convenience. Built to last.
                                 </p>
                             </AnimatedGroup>

@@ -1,3 +1,4 @@
+
 "use client";
 
 import { TimelineContent } from "@/components/ui/timeline-animation";
@@ -45,7 +46,7 @@ export function ClosingStatement() {
               animationNum={0}
               timelineRef={sectionRef}
               customVariants={revealVariants}
-              className="text-3xl sm:text-4xl md:text-5xl !leading-tight font-bold text-foreground"
+              className="!leading-tight font-bold text-foreground text-3xl sm:text-4xl md:text-5xl"
             >
               The Heart of Your Home,{" "}
               <TimelineContent
