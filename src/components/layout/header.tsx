@@ -22,13 +22,13 @@ export const Header = () => {
 
     React.useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50)
-        }
+            setIsScrolled(window.scrollY > 50);
+        };
+        handleScroll(); // Set initial state
         window.addEventListener('scroll', handleScroll, { passive: true });
-        // Call handler once to set initial state
-        handleScroll();
-        return () => window.removeEventListener('scroll', handleScroll)
-    }, [])
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
 
     const handleLinkClick = () => {
         setIsMobileMenuOpen(false);
