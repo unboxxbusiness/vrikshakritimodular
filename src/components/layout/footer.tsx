@@ -50,7 +50,7 @@ export function Footer() {
               Book a free design consultation with our experts today.
             </p>
             <Button asChild>
-                <Link href="#">
+                <Link href="/book-a-free-consultation">
                     Book Free Consultation <ArrowRight className="size-4 ml-2" />
                 </Link>
             </Button>

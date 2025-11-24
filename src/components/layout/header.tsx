@@ -133,7 +133,7 @@ export function Header() {
 
           <div className="hidden lg:flex items-center gap-4">
             <Button asChild>
-                <Link href="#">Book a Free Design Consultation</Link>
+                <Link href="/book-a-free-consultation">Book a Free Design Consultation</Link>
             </Button>
           </div>
 
@@ -183,7 +183,7 @@ export function Header() {
                   </nav>
                   <div className="mt-auto">
                     <Button asChild className="w-full">
-                        <Link href="#">Book a Free Design Consultation</Link>
+                        <Link href="/book-a-free-consultation">Book a Free Design Consultation</Link>
                     </Button>
                   </div>
                 </div>

@@ -74,7 +74,7 @@ export function Hero() {
                                         asChild
                                         size="lg"
                                         className="rounded-xl px-5 text-base">
-                                        <Link href="#link">
+                                        <Link href="/book-a-free-consultation">
                                             <span className="text-nowrap">Book a Free Design Consultation</span>
                                         </Link>
                                     </Button>

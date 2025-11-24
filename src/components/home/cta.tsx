@@ -15,7 +15,7 @@ export function Cta() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button asChild>
-                <Link href="#">
+                <Link href="/book-a-free-consultation">
                     Book Free Consultation <ArrowRight className="size-4 ml-2" />
                 </Link>
             </Button>
