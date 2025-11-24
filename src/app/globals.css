@@ -4,52 +4,52 @@
 
 @layer base {
   :root {
-    --background: 44 83% 97%; /* #FEFAE0 */
-    --foreground: 75 42% 12%; /* #283618 */
+    --background: 44 83% 97%; /* cornsilk: #fefae0 */
+    --foreground: 75 42% 12%; /* black_forest: #283618 */
 
-    --card: 44 83% 97%; /* #FEFAE0 */
-    --card-foreground: 75 42% 12%; /* #283618 */
+    --card: 44 83% 97%; /* cornsilk: #fefae0 */
+    --card-foreground: 75 42% 12%; /* black_forest: #283618 */
 
-    --popover: 44 83% 97%; /* #FEFAE0 */
-    --popover-foreground: 75 42% 12%; /* #283618 */
+    --popover: 44 83% 97%; /* cornsilk: #fefae0 */
+    --popover-foreground: 75 42% 12%; /* black_forest: #283618 */
 
-    --primary: 80 20% 31%; /* #606C38 */
-    --primary-foreground: 44 83% 97%; /* #FEFAE0 */
+    --primary: 80 20% 31%; /* olive_leaf: #606c38 */
+    --primary-foreground: 44 83% 97%; /* cornsilk: #fefae0 */
 
-    --secondary: 42 66% 94%; /* Lighter version of #DDA15E for secondary bg */
-    --secondary-foreground: 75 42% 12%;
+    --secondary: 39 59% 62%; /* sunlit_clay: #dda15e */
+    --secondary-foreground: 75 42% 12%; /* black_forest: #283618 */
 
-    --muted: 42 50% 90%;
-    --muted-foreground: 75 20% 31%;
+    --muted: 44 83% 95%;
+    --muted-foreground: 80 20% 40%;
 
-    --accent: 30 59% 49%; /* #BC6C25 */
-    --accent-foreground: 44 83% 97%;
+    --accent: 30 59% 49%; /* copperwood: #bc6c25 */
+    --accent-foreground: 44 83% 97%; /* cornsilk: #fefae0 */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 80 10% 80%; /* Muted green for borders */
-    --input: 80 10% 85%; /* Slightly lighter muted green for inputs */
-    --ring: 80 20% 31%; /* #606C38 */
+    --border: 80 10% 80%; /* Muted version of olive_leaf */
+    --input: 80 10% 85%; /* Lighter muted version of olive_leaf */
+    --ring: 80 20% 31%; /* olive_leaf: #606c38 */
 
     --chart-1: 80 20% 31%;
     --chart-2: 30 59% 49%;
-    --chart-3: 31 66% 62%;
+    --chart-3: 39 59% 62%;
     --chart-4: 44 30% 80%;
     --chart-5: 75 20% 50%;
-    --radius: 0.5rem;
     --sidebar-background: 44 83% 97%;
     --sidebar-foreground: 75 42% 12%;
     --sidebar-primary: 80 20% 31%;
     --sidebar-primary-foreground: 44 83% 97%;
-    --sidebar-accent: 42 66% 94%;
+    --sidebar-accent: 44 83% 95%;
     --sidebar-accent-foreground: 75 42% 12%;
     --sidebar-border: 80 10% 80%;
     --sidebar-ring: 80 20% 31%;
   }
+
   .dark {
-    --background: 75 42% 12%; /* #283618 */
-    --foreground: 44 83% 97%; /* #FEFAE0 */
+    --background: 75 42% 12%; /* black_forest: #283618 */
+    --foreground: 44 83% 97%; /* cornsilk: #fefae0 */
 
     --card: 75 42% 12%;
     --card-foreground: 44 83% 97%;
@@ -57,16 +57,16 @@
     --popover: 75 42% 12%;
     --popover-foreground: 44 83% 97%;
 
-    --primary: 80 20% 31%; /* #606C38 */
+    --primary: 80 20% 31%; /* olive_leaf: #606c38 */
     --primary-foreground: 44 83% 97%;
 
-    --secondary: 75 42% 18%; /* Darker secondary */
-    --secondary-foreground: 44 83% 97%;
+    --secondary: 30 59% 49%; /* copperwood: #bc6c25 */
+    --secondary-foreground: 44 83% 97%; /* cornsilk: #fefae0 */
     
     --muted: 75 42% 18%;
     --muted-foreground: 44 20% 80%;
     
-    --accent: 31 66% 62%; /* #DDA15E */
+    --accent: 39 59% 62%; /* sunlit_clay: #dda15e */
     --accent-foreground: 75 42% 12%;
 
     --destructive: 0 62.8% 30.6%;
@@ -74,10 +74,10 @@
     
     --border: 75 42% 20%;
     --input: 75 42% 20%;
-    --ring: 31 66% 62%; /* #DDA15E */
+    --ring: 39 59% 62%; /* sunlit_clay: #dda15e */
 
     --chart-1: 80 20% 31%;
-    --chart-2: 31 66% 62%;
+    --chart-2: 39 59% 62%;
     --chart-3: 30 59% 49%;
     --chart-4: 44 30% 80%;
     --chart-5: 75 20% 50%;
@@ -88,7 +88,7 @@
     --sidebar-accent: 75 42% 18%;
     --sidebar-accent-foreground: 44 83% 97%;
     --sidebar-border: 75 42% 20%;
-    --sidebar-ring: 31 66% 62%;
+    --sidebar-ring: 39 59% 62%;
   }
 }
 
