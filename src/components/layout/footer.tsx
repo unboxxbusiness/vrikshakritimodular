@@ -160,9 +160,9 @@ export function Footer() {
             © {new Date().getFullYear()} Vrikshakriti. All rights reserved.
           </p>
           <nav className="flex gap-4 text-sm">
-            <a href="#" className="transition-colors hover:text-primary">
+            <Link href="/privacy-policy" className="transition-colors hover:text-primary">
               Privacy Policy
-            </a>
+            </Link>
             <Link href="/terms-of-service" className="transition-colors hover:text-primary">
               Terms of Service
             </Link>
