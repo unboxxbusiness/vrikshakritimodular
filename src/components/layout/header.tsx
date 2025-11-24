@@ -1,12 +1,13 @@
+
 "use client";
 
-import React from 'react'
-import Link from 'next/link'
-import { Menu, ParkingSquare, Rows, Columns, BoxSelect, RefreshCw } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { cn } from '@/lib/utils'
-import { Logo } from './logo'
-import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import React from 'react';
+import Link from 'next/link';
+import { Menu, ParkingSquare, Rows, Columns, BoxSelect, RefreshCw } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
+import { Logo } from './logo';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -15,13 +16,13 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
+} from "@/components/ui/navigation-menu";
 
 const menuItems = [
     { name: 'Materials', href: '/materials-and-finishes' },
     { name: 'About', href: '/about' },
     { name: 'Gallery', href: '/gallery' },
-]
+];
 
 const kitchenStyles = [
   {
@@ -62,7 +63,6 @@ const kitchenStyles = [
   },
 ];
 
-
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a"> & { icon?: React.ReactNode }
@@ -96,151 +96,108 @@ ListItem.displayName = "ListItem"
 export const Header = () => {
     const [isScrolled, setIsScrolled] = React.useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-    const [hasMounted, setHasMounted] = React.useState(false);
 
     React.useEffect(() => {
-        setHasMounted(true);
-    }, []);
-
-    React.useEffect(() => {
-        if (!hasMounted) return;
-        
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
+            setIsScrolled(window.scrollY > 20);
         };
-        
         window.addEventListener('scroll', handleScroll, { passive: true });
-        handleScroll();
-
+        handleScroll(); 
         return () => window.removeEventListener('scroll', handleScroll);
-    }, [hasMounted]);
+    }, []);
 
     const handleLinkClick = () => {
         setIsMobileMenuOpen(false);
     };
 
-    if (!hasMounted) {
-        return (
-            <header>
-                <nav className="fixed z-20 w-full px-2">
-                    <div className={'mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12'}>
-                         <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
-                            <div className="flex w-full justify-between lg:w-auto">
-                                 <Link
-                                    href="/"
-                                    aria-label="home"
-                                    className="flex items-center space-x-2">
-                                    <Logo />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-        );
-    }
-
     return (
-        <header>
-            <nav className="fixed z-20 w-full px-2">
-                <div className={cn('mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12', isScrolled ? 'bg-background/50 max-w-4xl rounded-2xl border backdrop-blur-lg lg:px-5' : '')}>
-                    <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
-                        <div className="flex w-full justify-between lg:w-auto">
-                            <Link
-                                href="/"
-                                aria-label="home"
-                                className="flex items-center space-x-2">
-                                <Logo />
-                            </Link>
+        <header className={cn(
+            "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+            isScrolled ? "bg-background/80 backdrop-blur-sm border-b" : "bg-transparent border-b border-transparent"
+        )}>
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex h-16 items-center justify-between">
+                    <div className="flex items-center">
+                        <Link href="/" className="flex-shrink-0">
+                           <Logo />
+                        </Link>
+                    </div>
 
-                            <div className="lg:hidden">
-                                <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-                                    <SheetTrigger asChild>
-                                        <Button variant="outline" size="icon">
-                                            <Menu className="h-6 w-6" />
-                                            <span className="sr-only">Open menu</span>
-                                        </Button>
-                                    </SheetTrigger>
-                                    <SheetContent side="right">
-                                        <SheetTitle className="sr-only">Menu</SheetTitle>
-                                        <nav className="grid gap-6 text-lg font-medium mt-10">
-                                            <Link href="/" onClick={handleLinkClick} className="flex items-center gap-2 font-bold text-lg mb-4">
-                                                <Logo />
-                                                <span>Vrikshakriti</span>
-                                            </Link>
-                                            <Link href="/#kitchen-styles" onClick={handleLinkClick} className="text-muted-foreground hover:text-foreground">
-                                                Kitchen Styles
-                                            </Link>
-                                            {menuItems.map((item, index) => (
-                                                <Link
-                                                    key={index}
-                                                    href={item.href}
-                                                    onClick={handleLinkClick}
-                                                    className="text-muted-foreground hover:text-foreground"
-                                                >
-                                                    {item.name}
-                                                </Link>
-                                            ))}
-                                            <div className="flex w-full flex-col space-y-3 pt-6">
-                                                <Button asChild>
-                                                    <Link href="#" onClick={handleLinkClick}>
-                                                        <span>Book a Free Design Consultation</span>
-                                                    </Link>
-                                                </Button>
-                                            </div>
-                                        </nav>
-                                    </SheetContent>
-                                </Sheet>
-                            </div>
-                        </div>
-
-                         <div className="absolute inset-0 m-auto hidden size-fit lg:block">
-                             <NavigationMenu>
-                                <NavigationMenuList>
-                                    <NavigationMenuItem>
+                    <nav className="hidden md:flex md:items-center md:space-x-4">
+                        <NavigationMenu>
+                            <NavigationMenuList>
+                                <NavigationMenuItem>
                                     <NavigationMenuTrigger>Kitchen Styles</NavigationMenuTrigger>
                                     <NavigationMenuContent>
                                         <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                                        {kitchenStyles.map((component) => (
-                                            <ListItem
-                                            key={component.title}
-                                            title={component.title}
-                                            href={component.href}
-                                            icon={component.icon}
-                                            >
-                                            {component.description}
-                                            </ListItem>
-                                        ))}
+                                            {kitchenStyles.map((component) => (
+                                                <ListItem
+                                                    key={component.title}
+                                                    title={component.title}
+                                                    href={component.href}
+                                                    icon={component.icon}
+                                                >
+                                                    {component.description}
+                                                </ListItem>
+                                            ))}
                                         </ul>
                                     </NavigationMenuContent>
-                                    </NavigationMenuItem>
-                                    {menuItems.map((item) => (
-                                        <NavigationMenuItem key={item.name}>
-                                            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                                              <Link href={item.href}>
+                                </NavigationMenuItem>
+                                {menuItems.map((item) => (
+                                    <NavigationMenuItem key={item.name}>
+                                        <Link href={item.href} legacyBehavior passHref>
+                                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                                 {item.name}
-                                              </Link>
                                             </NavigationMenuLink>
-                                        </NavigationMenuItem>
+                                        </Link>
+                                    </NavigationMenuItem>
+                                ))}
+                            </NavigationMenuList>
+                        </NavigationMenu>
+                    </nav>
+
+                    <div className="hidden md:flex items-center space-x-4">
+                        <Button asChild size="sm">
+                            <Link href="#">Book a Free Design Consultation</Link>
+                        </Button>
+                    </div>
+
+                    <div className="md:hidden">
+                        <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+                            <SheetTrigger asChild>
+                                <Button variant="outline" size="icon">
+                                    <Menu className="h-6 w-6" />
+                                    <span className="sr-only">Open menu</span>
+                                </Button>
+                            </SheetTrigger>
+                            <SheetContent side="right" className="w-full max-w-sm">
+                                <nav className="grid gap-y-8 mt-12">
+                                     <Link href="/" onClick={handleLinkClick} className="flex items-center gap-2 font-bold text-lg">
+                                        <Logo />
+                                    </Link>
+                                    {menuItems.map((item) => (
+                                        <Link
+                                            key={item.href}
+                                            href={item.href}
+                                            onClick={handleLinkClick}
+                                            className="font-medium text-muted-foreground hover:text-foreground"
+                                        >
+                                            {item.name}
+                                        </Link>
                                     ))}
-                                </NavigationMenuList>
-                            </NavigationMenu>
-                        </div>
-
-
-                        <div className="hidden lg:flex lg:w-auto lg:gap-3">
-                            <Button
-                                asChild
-                                size="sm"
-                                >
-                                <Link href="#">
-                                    <span>Book a Free Design Consultation</span>
-                                </Link>
-                            </Button>
-                        </div>
+                                    <div className="mt-4">
+                                        <Button asChild className="w-full">
+                                            <Link href="#" onClick={handleLinkClick}>Book a Free Design Consultation</Link>
+                                        </Button>
+                                    </div>
+                                </nav>
+                            </SheetContent>
+                        </Sheet>
                     </div>
                 </div>
-            </nav>
+            </div>
         </header>
     )
 }
+
+    
