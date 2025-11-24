@@ -11,7 +11,9 @@ export default function MaterialsAndFinishesPage() {
   return (
     <>
       <Hero />
-      <CarcassMaterials />
+      <div id="carcass-materials">
+        <CarcassMaterials />
+      </div>
       <ShutterMaterials />
       <CountertopOptions />
       <HardwareAccessories />

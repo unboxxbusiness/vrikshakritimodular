@@ -1,33 +1,46 @@
 "use client";
 
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Button } from '@/components/ui/button';
+import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
-import { BGPattern } from '../ui/bg-pattern';
+import Link from 'next/link';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Hero() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'materials-hero-1');
 
   return (
-    <section className="relative h-[60vh] flex items-center justify-center text-center text-white">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          data-ai-hint={heroImage.imageHint}
-          fill
-          className="object-cover"
-          priority
-        />
-      )}
-      <div className="absolute inset-0 bg-black/50" />
-      <BGPattern variant="grid" size={32} mask="fade-y" className="opacity-10 dark:opacity-5" />
-      <div className="relative z-10 max-w-4xl space-y-6 px-6">
-        <h1 className="text-4xl font-semibold lg:text-6xl !leading-tight">
-          Premium Materials & Stylish Finishes Made for Modern Indian Kitchens
-        </h1>
-        <p className="text-lg md:text-xl">
-          A great modular kitchen begins with the right materials. At Vrikshakriti, we use carefully selected, high-quality boards, shutters, hardware, and finishes to ensure your kitchen looks beautiful and performs effortlessly for years. Whether you want luxurious aesthetics, long-term durability, or easy maintenance, our curated range of materials and finishes gives you complete flexibility.
-        </p>
+    <section className="py-16 md:py-32">
+      <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12">
+        {heroImage && (
+          <Image
+            className="rounded-lg grayscale"
+            src={heroImage.imageUrl}
+            alt={heroImage.description}
+            data-ai-hint={heroImage.imageHint}
+            height={800}
+            width={1200}
+            loading="lazy"
+          />
+        )}
+
+        <div className="grid gap-6 md:grid-cols-2 md:gap-12 items-center">
+          <h2 className="text-4xl font-medium">
+            Premium Materials & Stylish Finishes Made for Modern Indian Kitchens
+          </h2>
+          <div className="space-y-6">
+            <p className="text-muted-foreground">
+              A great modular kitchen begins with the right materials. At Vrikshakriti, we use carefully selected, high-quality boards, shutters, hardware, and finishes to ensure your kitchen looks beautiful and performs effortlessly for years.
+            </p>
+
+            <Button asChild size="sm" className="gap-1 pr-1.5">
+              <Link href="#carcass-materials">
+                <span>Explore Materials</span>
+                <ChevronRight className="size-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
       </div>
     </section>
   );
