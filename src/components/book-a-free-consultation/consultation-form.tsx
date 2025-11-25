@@ -34,14 +34,15 @@ const formSchema = z.object({
     required_error: "You need to select a kitchen layout.",
   }),
   size: z.string().optional(),
-  file: z.any().optional(),
   message: z.string().optional(),
 })
+
+type FormData = z.infer<typeof formSchema>;
 
 export function ConsultationForm() {
   const { toast } = useToast();
 
-  const form = useForm<z.infer<typeof formSchema>>({
+  const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
@@ -52,25 +53,47 @@ export function ConsultationForm() {
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    const whatsappMessage = `Hi, I'd like to book a free design consultation.
-Name: ${values.name}
-Phone: ${values.phone}
-City: ${values.city}
-Kitchen Layout: ${values.layout}
-Approx. Size: ${values.size || 'Not provided'}
-Message: ${values.message || 'No message provided.'}`;
+  const encode = (data: any) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
 
-    const whatsappUrl = `https://wa.me/918851481785?text=${encodeURIComponent(whatsappMessage)}`;
-    
-    window.open(whatsappUrl, '_blank');
-    
-    toast({
-      title: "Redirecting to WhatsApp!",
-      description: "Please send the pre-filled message to connect with our team.",
+  const onSubmit = (data: FormData) => {
+    // First, submit to Netlify
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "consultation", ...data })
+    })
+    .then(() => {
+      // Then, create WhatsApp message and redirect
+      const whatsappMessage = `Hi, I'd like to book a free design consultation.
+Name: ${data.name}
+Phone: ${data.phone}
+City: ${data.city}
+Kitchen Layout: ${data.layout}
+Approx. Size: ${data.size || 'Not provided'}
+Message: ${data.message || 'No message provided.'}`;
+
+      const whatsappUrl = `https://wa.me/918851481785?text=${encodeURIComponent(whatsappMessage)}`;
+      
+      toast({
+        title: "Form submitted!",
+        description: "Redirecting you to WhatsApp to connect with our team.",
+      });
+
+      window.open(whatsappUrl, '_blank');
+      form.reset();
+    })
+    .catch(error => {
+      toast({
+        variant: "destructive",
+        title: "Submission Failed",
+        description: "Something went wrong. Please try again.",
+      });
+      console.error(error);
     });
-    
-    form.reset();
   }
 
   return (
@@ -81,7 +104,13 @@ Message: ${values.message || 'No message provided.'}`;
             </div>
             <div className="bg-background dark:bg-muted/50 rounded-2xl border p-6 md:p-10 shadow-lg">
                 <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+                <form
+                  name="consultation"
+                  data-netlify="true"
+                  onSubmit={form.handleSubmit(onSubmit)}
+                  className="space-y-8"
+                >
+                  <input type="hidden" name="form-name" value="consultation" />
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <FormField
                             control={form.control}
@@ -163,23 +192,6 @@ Message: ${values.message || 'No message provided.'}`;
                                 <FormControl>
                                     <Input placeholder="e.g., 10ft x 8ft" {...field} />
                                 </FormControl>
-                                <FormMessage />
-                            </FormItem>
-                        )}
-                    />
-
-                    <FormField
-                        control={form.control}
-                        name="file"
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Upload Existing Kitchen Photo / Plan (optional)</FormLabel>
-                                <FormControl>
-                                    <Input type="file" {...form.register("file")} />
-                                </FormControl>
-                                <FormDescription>
-                                    We can discuss this over WhatsApp as well.
-                                </FormDescription>
                                 <FormMessage />
                             </FormItem>
                         )}
