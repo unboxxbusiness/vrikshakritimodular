@@ -9,7 +9,6 @@ import { Inter } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import { Dock } from '@/components/layout/dock';
 import { ScrollToTopButton } from '@/components/layout/scroll-to-top-button';
-import { useIsMobile } from '@/hooks/use-mobile';
 
 const fontSans = Inter({
   subsets: ['latin'],
@@ -64,8 +63,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const isMobile = useIsMobile();
-
   return (
     <html lang="en" className={cn("scroll-smooth", fontSans.variable)}>
       <body className="font-sans antialiased">
@@ -75,7 +72,7 @@ export default function RootLayout({
           <Footer />
         </div>
         <Toaster />
-        {isMobile && <Dock />}
+        <Dock />
         <ScrollToTopButton />
       </body>
     </html>

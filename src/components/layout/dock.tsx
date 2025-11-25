@@ -13,8 +13,10 @@ import {
 import { motion } from "framer-motion"
 import { useToast } from "@/hooks/use-toast"
 import Link from "next/link"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export function Dock({ className }: { className?: string }) {
+  const isMobile = useIsMobile();
   const [hovered, setHovered] = React.useState<number | null>(null)
   const { toast } = useToast()
 
@@ -72,6 +74,10 @@ export function Dock({ className }: { className?: string }) {
       onClick: handleShare,
     },
   ]
+
+  if (!isMobile) {
+    return null;
+  }
 
   return (
     <div
