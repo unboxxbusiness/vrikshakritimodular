@@ -37,10 +37,10 @@ export function Hero() {
         "Fast Installation"
     ];
     return (
-        <div className="overflow-hidden pt-8">
+        <div className="overflow-hidden pt-16">
              <BGPattern variant="grid" size={32} mask="fade-y" className="opacity-10 dark:opacity-5" />
             <section>
-                <div className="relative pt-24 md:pt-36">
+                <div className="relative pt-24 md:pt-28">
                     <div aria-hidden className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--background)_75%)]" />
                     <div className="mx-auto max-w-7xl px-6">
                         <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
