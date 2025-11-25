@@ -10,7 +10,7 @@ export function Hero() {
           Get Free, Expert Modular Kitchen Guidance
         </h1>
         <p className="text-muted-foreground text-lg">
-          Share your details and connect with our design experts on WhatsApp for instant assistance, layout guidance, pricing estimates, and material suggestions.
+          Connect with our design experts for free advice on layout, pricing, and materials.
         </p>
       </div>
     </section>
