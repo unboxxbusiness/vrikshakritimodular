@@ -1,6 +1,8 @@
+
 import { Cta } from '@/components/faq/cta';
-import { FaqSection, faqSections } from '@/components/faq/faq-section';
+import { FaqSection } from '@/components/faq/faq-section';
 import { Hero } from '@/components/faq/hero';
+import { faqSections } from '@/lib/faq-data';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
