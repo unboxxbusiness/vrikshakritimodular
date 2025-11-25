@@ -1,5 +1,3 @@
-"use client"
-
 import type { Metadata } from 'next';
 import './globals.css';
 import { Footer } from '@/components/layout/footer';
@@ -15,9 +13,6 @@ const fontSans = Inter({
   variable: '--font-sans',
 });
 
-// Note: Metadata is exported from a client component. This is not ideal but
-// Next.js will still pick it up. A better solution would be to move client-specific
-// components to a child component. For now, this resolves the immediate error.
 export const metadata: Metadata = {
   title: {
     default: 'Vrikshakriti - Modern Modular Kitchens & Interiors',
