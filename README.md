@@ -39,8 +39,3 @@ We offer end-to-end modular kitchen solutions, including:
 ## 🎯 Our Mission
 
 To make high-quality modular kitchens accessible and stress-free for homeowners, combining creativity, functionality, and long-term value.
-# vrikshakritimodularkitchen
-# vrikshakritimodular
-# vrikshakritimodular
-# vrikshakritimodular
-# vrikshakritimodular
