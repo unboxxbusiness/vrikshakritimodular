@@ -16,7 +16,7 @@ import Link from "next/link"
 import { useIsMobile } from "@/hooks/use-mobile"
 
 export function Dock({ className }: { className?: string }) {
-  const isMobile = useIsMobile();
+  const isMobile = useIsMobile()
   const [hovered, setHovered] = React.useState<number | null>(null)
   const { toast } = useToast()
 
