@@ -60,15 +60,7 @@ export function ConsultationForm() {
   }
 
   const onSubmit = (data: FormData) => {
-    // First, submit to Netlify
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "consultation", ...data })
-    })
-    .then(() => {
-      // Then, create WhatsApp message and redirect
-      const whatsappMessage = `Hi, I'd like to book a free design consultation.
+    const whatsappMessage = `Hi, I'd like to book a free design consultation.
 Name: ${data.name}
 Phone: ${data.phone}
 City: ${data.city}
@@ -76,24 +68,15 @@ Kitchen Layout: ${data.layout}
 Approx. Size: ${data.size || 'Not provided'}
 Message: ${data.message || 'No message provided.'}`;
 
-      const whatsappUrl = `https://wa.me/918851481785?text=${encodeURIComponent(whatsappMessage)}`;
-      
-      toast({
-        title: "Form submitted!",
-        description: "Redirecting you to WhatsApp to connect with our team.",
-      });
-
-      window.open(whatsappUrl, '_blank');
-      form.reset();
-    })
-    .catch(error => {
-      toast({
-        variant: "destructive",
-        title: "Submission Failed",
-        description: "Something went wrong. Please try again.",
-      });
-      console.error(error);
+    const whatsappUrl = `https://wa.me/918851481785?text=${encodeURIComponent(whatsappMessage)}`;
+    
+    toast({
+      title: "Form submitted!",
+      description: "Redirecting you to WhatsApp to connect with our team.",
     });
+
+    window.open(whatsappUrl, '_blank');
+    form.reset();
   }
 
   return (
@@ -105,12 +88,9 @@ Message: ${data.message || 'No message provided.'}`;
             <div className="bg-background dark:bg-muted/50 rounded-2xl border p-6 md:p-10 shadow-lg">
                 <Form {...form}>
                 <form
-                  name="consultation"
-                  data-netlify="true"
                   onSubmit={form.handleSubmit(onSubmit)}
                   className="space-y-8"
                 >
-                  <input type="hidden" name="form-name" value="consultation" />
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <FormField
                             control={form.control}
