@@ -8,3 +8,6 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[forms.contact-form]
+  name = "contact-form"

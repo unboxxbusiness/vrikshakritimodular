@@ -60,6 +60,14 @@ export function ConsultationForm() {
   }
 
   const onSubmit = (data: FormData) => {
+    // 1. Submit to Netlify in the background
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact-form", ...data }),
+    }).catch((error) => console.error("Netlify form submission error:", error));
+
+    // 2. Create and open WhatsApp message
     const whatsappMessage = `Hi, I'd like to book a free design consultation.
 Name: ${data.name}
 Phone: ${data.phone}
@@ -88,9 +96,20 @@ Message: ${data.message || 'No message provided.'}`;
             <div className="bg-background dark:bg-muted/50 rounded-2xl border p-6 md:p-10 shadow-lg">
                 <Form {...form}>
                 <form
+                  name="contact-form"
+                  method="POST"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
                   onSubmit={form.handleSubmit(onSubmit)}
                   className="space-y-8"
                 >
+                    <input type="hidden" name="form-name" value="contact-form" />
+                    <p className="hidden">
+                        <label>
+                        Don’t fill this out if you’re human: <input name="bot-field" />
+                        </label>
+                    </p>
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <FormField
                             control={form.control}
