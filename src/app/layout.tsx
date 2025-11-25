@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
-import { Header } from '@/components/layout/header';
 import { Inter } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import { Dock } from '@/components/layout/dock';
 import { ScrollToTopButton } from '@/components/layout/scroll-to-top-button';
+import { ClientHeader } from '@/components/layout/client-header';
+import { ClientFooter } from '@/components/layout/client-footer';
 
 const fontSans = Inter({
   subsets: ['latin'],
@@ -62,9 +62,9 @@ export default function RootLayout({
     <html lang="en" className={cn("scroll-smooth", fontSans.variable)}>
       <body className="font-sans antialiased">
         <div className="flex min-h-screen flex-col">
-          <Header />
+          <ClientHeader />
           <main className="flex-grow pt-16">{children}</main>
-          <Footer />
+          <ClientFooter />
         </div>
         <Toaster />
         <Dock />

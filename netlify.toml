@@ -3,11 +3,5 @@
   command = "npm run build"
   publish = ".next"
 
-[functions]
-  included_files = ["./public/success.html"]
-
 [[plugins]]
   package = "@netlify/plugin-nextjs"
-
-[forms.contact-form]
-  name = "contact-form"
