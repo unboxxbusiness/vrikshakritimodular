@@ -1,3 +1,4 @@
+
 "use client"
 
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -76,7 +77,7 @@ Message: ${values.message || 'No message provided.'}`;
     <section className="pb-16 md:pb-24">
         <div className="container mx-auto px-6 max-w-2xl">
             <div className="text-center mb-10">
-                <h2 className="text-3xl font-semibold md:text-4xl">Your Kitchen. Your Style. Your Details.</h2>
+                <h2 className="text-3xl font-semibold md:text-4xl">Tell Us About Your Dream Kitchen</h2>
             </div>
             <div className="bg-background dark:bg-muted/50 rounded-2xl border p-6 md:p-10 shadow-lg">
                 <Form {...form}>
@@ -210,5 +211,3 @@ Message: ${values.message || 'No message provided.'}`;
     </section>
   )
 }
-
-    
