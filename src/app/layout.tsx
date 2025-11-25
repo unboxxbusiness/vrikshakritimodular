@@ -6,7 +6,6 @@ import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/header';
 import { Inter } from 'next/font/google';
 import { cn } from '@/lib/utils';
-import { ScrollToTopButton } from '@/components/layout/scroll-to-top-button';
 import { Dock } from '@/components/layout/dock';
 
 const fontSans = Inter({
@@ -43,7 +42,9 @@ export const metadata: Metadata = {
     description: 'Design your dream modular kitchen with our expert team. Quality craftsmanship and transparent pricing.',
     images: ['https://res.cloudinary.com/dhrigocvd/image/upload/v1763958686/Gemini_Generated_Image_wkk0fiwkk0fiwkk0_zgz3un.png'],
   },
-  icons: 'https://res.cloudinary.com/dhrigocvd/image/upload/v1763972114/Gemini_Generated_Image_rw369trw369trw36-removebg-preview_1_utsfjk.png',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -60,7 +61,6 @@ export default function RootLayout({
           <Footer />
         </div>
         <Toaster />
-        <ScrollToTopButton />
         <Dock />
       </body>
     </html>
