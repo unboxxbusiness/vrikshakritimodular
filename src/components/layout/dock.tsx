@@ -18,8 +18,13 @@ import { useIsMobile } from "@/hooks/use-mobile"
 
 export function Dock({ className }: { className?: string }) {
   const [hovered, setHovered] = React.useState<number | null>(null)
+  const [isClient, setIsClient] = React.useState(false);
   const { toast } = useToast()
   const isMobile = useIsMobile();
+
+  React.useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const handleShare = async () => {
     const shareData = {
@@ -76,7 +81,7 @@ export function Dock({ className }: { className?: string }) {
     },
   ]
 
-  if (!isMobile) {
+  if (!isClient || !isMobile) {
     return null;
   }
 
