@@ -8,7 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
-const faqSections = [
+export const faqSections = [
   {
     title: "General Questions",
     items: [
