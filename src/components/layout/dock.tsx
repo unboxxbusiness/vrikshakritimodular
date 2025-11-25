@@ -1,4 +1,3 @@
-
 "use client"
 
 import * as React from "react"
@@ -14,17 +13,10 @@ import {
 import { motion } from "framer-motion"
 import { useToast } from "@/hooks/use-toast"
 import Link from "next/link"
-import { useIsMobile } from "@/hooks/use-mobile"
 
 export function Dock({ className }: { className?: string }) {
   const [hovered, setHovered] = React.useState<number | null>(null)
-  const [isClient, setIsClient] = React.useState(false);
   const { toast } = useToast()
-  const isMobile = useIsMobile();
-
-  React.useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   const handleShare = async () => {
     const shareData = {
@@ -80,10 +72,6 @@ export function Dock({ className }: { className?: string }) {
       onClick: handleShare,
     },
   ]
-
-  if (!isClient || !isMobile) {
-    return null;
-  }
 
   return (
     <div
