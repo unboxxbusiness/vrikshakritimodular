@@ -7,6 +7,7 @@ import { Header } from '@/components/layout/header';
 import { Inter } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import { Dock } from '@/components/layout/dock';
+import { ScrollToTopButton } from '@/components/layout/scroll-to-top-button';
 
 const fontSans = Inter({
   subsets: ['latin'],
@@ -63,11 +64,12 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <div className="flex min-h-screen flex-col">
           <Header />
-          <main className="flex-grow">{children}</main>
+          <main className="flex-grow pt-16">{children}</main>
           <Footer />
         </div>
         <Toaster />
         <Dock />
+        <ScrollToTopButton />
       </body>
     </html>
   );
